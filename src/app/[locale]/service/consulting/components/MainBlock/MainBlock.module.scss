@@ -1,0 +1,244 @@
+.wrap {
+  padding-top: 120px;
+  padding-bottom: 210px;
+  display: flex;
+  flex-direction: column;
+  gap: 210px;
+  position: relative;
+
+  & > div {
+    overflow-y: hidden;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 120px;
+    gap: 120px;
+  }
+
+  @media (max-width: 500px) {
+    padding-bottom: 90px;
+    gap: 170px;
+  }
+}
+
+.title {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -3.2px;
+  white-space: break-spaces;
+
+  @media (max-width: 992px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 30px;
+    white-space: break-spaces;
+  }
+}
+
+.desc {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.4px;
+  white-space: break-spaces;
+  max-width: 655px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    gap: 15px;
+    max-width: 400px;
+  }
+}
+
+.blocks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  @media (max-width: 768px) {
+    gap: 40px;
+  }
+}
+
+.blockLists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  & > div:nth-child(4) {
+    grid-column: span 2;
+  }
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 222px);
+
+    & > div:nth-child(4) {
+      order: 1;
+    }
+  }
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.card {
+  padding: 18px;
+  border-radius: 24px;
+  background: var(--buttonText);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 270px;
+
+  @media (max-width: 1200px) {
+    height: 320px;
+  }
+
+  @media (max-width: 992px) {
+    height: 100%;
+    gap: 20px;
+  }
+}
+
+.cardTitle {
+  color: var(--button);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.4px;
+  white-space: break-spaces;
+}
+
+.cardDesc {
+  color: var(--Gray, var(--Gray, #8c8c8c));
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.4px;
+
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+}
+
+.cardOpacity {
+  padding: 18px;
+  border-radius: 24px;
+  display: flex;
+  border: 1px solid var(--Gray, #8c8c8c);
+  flex-direction: column;
+  justify-content: space-between;
+  height: 270px;
+
+  @media (max-width: 1200px) {
+    height: 320px;
+  }
+
+  @media (max-width: 992px) {
+    height: 100%;
+    gap: 20px;
+  }
+}
+
+.cardTitleOpacity {
+  color: var(--Violet, #5348d1);
+  font-family: Inter;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -4.8px;
+
+  @media (max-width: 768px) {
+    font-size: 80px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 40px;
+  }
+}
+
+.cardDescOpacity {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+}
+
+.img {
+  position: absolute;
+  width: 950px;
+  height: 950px;
+  top: 200px;
+  right: -350px;
+  opacity: 0.9;
+
+  & > img {
+    object-fit: contain;
+  }
+
+  @media (max-width: 1440px) {
+    width: 750px;
+    height: 750px;
+    right: -150px;
+    top: 250px;
+  }
+
+  @media (max-width: 992px) {
+    width: 500px;
+    height: 500px;
+    top: 260px;
+    right: -100px;
+  }
+
+  @media (max-width: 768px) {
+    width: 400px;
+    height: 400px;
+    top: 30px;
+    right: -100px;
+  }
+
+  @media (max-width: 500px) {
+    width: 250px;
+    height: 250px;
+    top: 190px;
+    right: -40px;
+  }
+}

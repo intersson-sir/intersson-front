@@ -1,0 +1,101 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  & > button {
+    background: #fff !important;
+    color: #262626 !important;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoImg {
+  position: relative;
+  width: 27px;
+  height: 27px;
+
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.logoTitle {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.logoTitleMobile {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.item {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.4px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  & > div > button {
+    background: #fff !important;
+    color: #262626 !important;
+  }
+
+  & > div > a > span {
+    color: #fff;
+  }
+}
+
+.btn {
+  & > svg > path {
+    stroke: #fff;
+  }
+}
+
+html[data-theme='light'] .btn {
+  & > svg > path {
+    stroke: #262626;
+  }
+}
+
+.dialog {
+  z-index: 8;
+  overflow: auto;
+  padding: 30px;
+
+  @media (max-width: 768px) {
+    max-width: 252px;
+    min-width: 200px;
+  }
+}

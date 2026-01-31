@@ -1,0 +1,107 @@
+.cardInner {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: var(
+    --Gradient,
+    linear-gradient(
+      91deg,
+      #4c69d8 -9.42%,
+      #3388d0 33.32%,
+      #c4c1a9 54.62%,
+      #ebbc88 76%,
+      #ca8286 96.95%,
+      #5348d1 119.26%
+    )
+  );
+}
+
+.card {
+  position: relative;
+  background: var(--background4);
+  padding: 18px;
+  max-width: 303px;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 1300px) {
+    min-height: 345px;
+  }
+}
+
+.info {
+  display: flex;
+  height: 100%;
+  min-height: 244px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+
+  @media (max-width: 1300px) {
+    min-height: 310px;
+  }
+}
+
+.title {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+
+  @media (max-width: 992px) {
+    font-size: 16px;
+  }
+}
+
+.desc {
+  color: var(--Gray, var(--Gray, #8c8c8c));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+}
+
+.descBlue {
+  color: var(--Violet, var(--Gray, #5348d1));
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 4px 12px;
+  border-radius: 100px;
+  background: var(--tag);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Gray, var(--Gray, #8c8c8c));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+.descWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

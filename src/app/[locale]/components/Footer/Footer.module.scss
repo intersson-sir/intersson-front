@@ -1,0 +1,284 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 173px;
+  padding-top: 194px;
+
+  @media (max-width: 992px) {
+    padding-top: 160px;
+    gap: 63px;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 713px;
+
+  @media (max-width: 992px) {
+    height: 500px;
+  }
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.line {
+  width: 100%;
+  background: var(
+    --Gradient,
+    linear-gradient(
+      91deg,
+      #4c69d8 -9.42%,
+      #3388d0 33.32%,
+      #c4c1a9 54.62%,
+      #ebbc88 76%,
+      #ca8286 96.95%,
+      #5348d1 119.26%
+    )
+  );
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 992px) {
+    padding: 10px 20px;
+    gap: 30px;
+    overflow-x: auto;
+  }
+}
+
+.tag {
+  color: #f3f3f3;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.form {
+  cursor: pointer;
+  border-radius: 24px;
+  background: #262626;
+  height: 100%;
+  width: 100%;
+  max-width: 518px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  justify-content: center;
+  padding: 30px;
+
+  @media (max-width: 992px) {
+    max-width: 280px;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.titleWrap {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 992px) {
+    height: 50%;
+    justify-content: space-between;
+  }
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -3.2px;
+  white-space: break-spaces;
+
+  @media (max-width: 992px) {
+    font-size: 30px;
+  }
+}
+
+.manager {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.managerDescWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.managerTitle {
+  color: var(--White, var(--Color, #fff));
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: -0.8px;
+
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+}
+
+.managerDesc {
+  color: var(--footerText);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: -0.56px;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (max-width: 992px) {
+    gap: 20px;
+  }
+}
+
+.video {
+  height: 269px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+
+  @media (max-width: 992px) {
+    height: 145px;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.socialBtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--button);
+  color: var(--buttonText);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.22px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    width: 31px;
+    height: 31px;
+    border-radius: 6px;
+  }
+}
+
+html[data-theme='dark'] .form {
+  background: linear-gradient(
+      91deg,
+      #4c69d8 -9.42%,
+      #3388d0 33.32%,
+      #c4c1a9 54.62%,
+      #ebbc88 76%,
+      #ca8286 96.95%,
+      #5348d1 119.26%
+    ),
+    var(--Black, #262626);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 196px 1fr;
+  gap: 40px 20px;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.text {
+  color: #8c8c8c;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.56px;
+  white-space: break-spaces;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.descWrap {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.descWrapAbout {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.mobileList {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+  display: none;
+
+  @media (max-width: 992px) {
+    display: grid;
+  }
+}
+
+.mailBtn {
+  display: flex;
+}

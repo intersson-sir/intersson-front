@@ -1,0 +1,1149 @@
+{
+  "Header": {
+    "about": "About Us",
+    "work": "Subscription",
+    "prices": "Services",
+    "projects": "Reviews",
+    "contacts": "Contacts",
+    "form": "Discuss a project",
+    "theme": "Change theme"
+  },
+  "Hero": {
+    "title": "Your IT partner for rapid\ndigital product launch",
+    "titleMobile": "Your IT partner\nfor rapid digital product launch",
+    "experts": "experts",
+    "stek": "Stack by stack"
+  },
+  "Footer": {
+    "title": "Discuss\nproject",
+    "manager": "Project manager",
+    "about": "About us",
+    "prices": "Services",
+    "projects": "Reviews",
+    "contacts": "Contacts",
+    "policy": "Privacy\npolicy",
+    "usePolicy": "Terms of\nuse",
+    "addressMsk": "8 Presnenskaya Embankment, Bldg. 1, Moscow, 143409, Russia",
+    "maria": "Igor Tarakin"
+  },
+  "About": {
+    "title": "About us",
+    "subTitle": "Helping projects grow rapidly by implementing the best technological solutions",
+    "desc": "Our work is a synthesis of experience in various fields: from development and design to strategy and technology. We create products from scratch and improve existing projects, taking into account the client's needs.",
+    "projects": "Completed projects",
+    "team": "Developers in the team",
+    "dev": "Years in the development market"
+  },
+  "Return": {
+    "title": "Why clients return to us",
+    "desc": "Transparent processes for clients of any scale: from pre-seed startups to tenders and state corporations",
+    "startTitle": "Quick start in 24 hours",
+    "startDesc": "We provide a preliminary estimate within 24 hours. We start in 2 days.",
+    "securityTitle": "Security",
+    "securityDesc": "We adhere to high cybersecurity standards.",
+    "methodTitle": "Flexible methodologies",
+    "methodDesc": "Agile, Waterfall, V-Model, Incremental.",
+    "taskTitle": "Task tracker",
+    "taskDesc": "We provide access to the backlog and task tracker, where you can see the process at any time.",
+    "docsTitle": "Documentation",
+    "docsDesc": "We document the code thoroughly and neatly."
+  },
+  "Media": {
+    "title": "We in the media",
+    "news1Title": "What is fast start?",
+    "news1Desc": "We provide a preliminary estimate within 24 hours. We start in 2 days.",
+    "news2Title": "Ramonsky rabbit",
+    "news2Desc": "We optimized the operation of a rabbit farm using a large ERP information system based on the Mikhailov system."
+  },
+  "Pricing": {
+    "title": "Plans",
+    "soon": "SOON",
+    "subtitle": "Start with monthly subscription, buy out anytime",
+    "mostPopular": "Most Popular",
+    "getStarted": "Get Started",
+    "starter": {
+      "title": "Starter",
+      "desc": "Perfect for small businesses just getting started",
+      "price": "$90",
+      "buyout": "Buyout: $1,500",
+      "feature1": "Landing page",
+      "feature2": "Basic template customization",
+      "feature3": "Mobile responsive",
+      "feature4": "SSL certificate included",
+      "feature5": "Monthly content updates (2)",
+      "feature6": "Email support",
+      "feature7": "Hosting included"
+    },
+    "professional": {
+      "title": "Professional",
+      "desc": "Ideal for growing businesses with more needs",
+      "price": "$190",
+      "buyout": "Buyout: $3,500",
+      "feature1": "Up to 3 pages",
+      "feature2": "Advanced customization",
+      "feature3": "Mobile responsive",
+      "feature4": "SSL certificate included",
+      "feature5": "Weekly content updates (8)",
+      "feature6": "Priority email support",
+      "feature7": "Hosting included",
+      "feature8": "Contact forms",
+      "feature9": "Basic SEO optimization"
+    },
+    "enterprise": {
+      "title": "Enterprise",
+      "desc": "For established businesses needing full features",
+      "price": "$490",
+      "buyout": "Buyout: $6,500",
+      "feature1": "Up to 6 pages",
+      "feature2": "Full customization",
+      "feature3": "Mobile responsive",
+      "feature4": "SSL certificate included",
+      "feature5": "Unlimited content updates",
+      "feature6": "24/7 priority support",
+      "feature7": "Premium hosting",
+      "feature8": "Advanced forms",
+      "feature9": "Full SEO optimization",
+      "feature10": "Custom functionality",
+      "feature11": "Performance optimization"
+    }
+  },
+  "Reviews": {
+    "title": "Client Reviews",
+    "subtitle": "See what our clients say about working with us",
+    "leaveReview": "Leave Review",
+    "review1": "Excellent team of professionals! They developed our project quickly and with high quality. We were particularly impressed by their ability to understand business requirements and offer technically sound solutions.",
+    "review2": "Worked on a complex enterprise project. The team showed a high level of technical expertise, met all deadlines, and provided regular updates on work progress.",
+    "review3": "We've been cooperating for the second year. During this time, we've implemented three major projects. We value professionalism, attention to detail, and willingness to accommodate in difficult situations.",
+    "review4": "They helped with MVP development for our startup. Excellent price-quality ratio. The team is flexible and ready to quickly adapt to changing requirements.",
+    "review5": "Developed a full-featured e-commerce platform. The project was delivered on time, documentation is complete, code is clean. We recommend them as a reliable technology partner.",
+    "review6": "Impressed by the level of technical expertise and the team's ability to scale solutions. Successfully handled a high-load system for our global product."
+  },
+  "Subscription": {
+    "heroTitle": "Professional Websites Through Subscription",
+    "heroSubtitle": "Launch your business online without large upfront costs. Pay monthly and get the option to buy anytime.",
+    "benefitsTitle": "Built for Entrepreneurs",
+    "benefit1Title": "No Upfront Payment",
+    "benefit1Desc": "Start with just a monthly subscription. No $1000-$3000 initial investment required.",
+    "benefit2Title": "Launch in 1-3 Days",
+    "benefit2Desc": "Choose from ready-made templates and get your custom website live in days.",
+    "benefit3Title": "Buy Anytime",
+    "benefit3Desc": "Purchase full ownership of your website (domain + files) whenever you're ready.",
+    "benefit4Title": "Easy Content Management",
+    "benefit4Desc": "Edit text and images through a simple dashboard. Request changes anytime.",
+    "benefit5Title": "Hosting Included",
+    "benefit5Desc": "We handle all hosting and maintenance while your subscription is active.",
+    "benefit6Title": "Technical Support",
+    "benefit6Desc": "Get help from our team with any technical questions.",
+    "industriesTitle": "Choose Your Industry"
+  },
+  "Projects": {
+    "title": "Key projects",
+    "desc": "From MVP development\nto growth and expansion",
+    "dropDesc": "We created the 8bitdrop platform from scratch, which combines mini-games, case openings, and esports betting. We designed the architecture, created a unique design and user-friendly interface, and implemented secure server functionality. We introduced a system of 'transparency' for results, ensuring user trust in the platform.",
+    "merlinesDesc": "We developed the Merlines service for searching available train, car, and airline tickets. We designed and implemented an architecture with a unique meta-search system.",
+    "petDesc": "We developed the server-side for a social network for pet owners. We implemented user data management, integration with external services, and ensured security.",
+    "everypetDesc": "The service for pet owners has become in demand due to the ability to share experience and knowledge about pets, participate in specialized communities and manage the care of their pets, including making appointments with specialists.",
+    "rukingDesc": "We created the design, architecture, and frontend for a hotel booking service. We implemented various metrics to track system efficiency, such as hotel occupancy rates, average booking duration, and cancellation rates.",
+    "8Bit": {
+      "title": "8bitdrop",
+      "subTitle": "Development of a gambling platform",
+      "desc": "For our client, we developed the 8bitdrop project from scratch — a gambling platform that combines mini-games (Crash, Double, Mines), the ability to open cases to receive in-game items for the game Standoff 2, and betting on real esports matches. Our team designed the system architecture, developed a unique design, created a convenient and intuitive user interface, implemented reliable and secure server functionality, and introduced a system of 'transparency' for result drops, ensuring users' confidence in the fair and accurate operation of the game mechanics. The project was successfully completed and launched within seven months.",
+      "result": "The platform received positive feedback for its user-friendly interface, reliable performance, and the 'transparency' system for results, ensuring users' trust in the platform.",
+      "resultTag": "Result",
+      "next": "Next",
+      "project": "Discuss project",
+      "merlines": "Development of a Meta-Search system"
+    },
+    "Merlines": {
+      "title": "Merlines",
+      "subTitle": "Development of a Meta-Search system",
+      "desc": "Merlines is a service for searching cheap rail, auto and air tickets. The team developed a service that allows collecting statistics on search queries, publishing content and mailing. The team was engaged in finalization of the Merlines project for the project launch on the market. market.",
+      "result": "The Merlines platform has successfully entered the market due to its intuitive design and stable functioning, which made it popular among users.",
+      "resultTag": "Result",
+      "next": "Next",
+      "project": "Discuss project",
+      "merlines": "System development"
+    },
+    "EveryPet": {
+      "title": "EveryPet",
+      "subTitle": "System development",
+      "desc": "Everypet is a social network for pet owners, where people can share information about their pets, browse thematic communities, monitor their pets and make appointments with specialists. The team was engaged in the development and linking of the server part of the project Everypet.",
+      "result": "The service for pet owners has become in demand due to the ability to share experience and knowledge about pets, participate in specialized communities and manage the care of their pets, including making appointments with specialists.",
+      "resultTag": "Result",
+      "next": "Next",
+      "project": "Discuss project",
+      "merlines": "System development"
+    },
+    "Ruking": {
+      "title": "RuKing",
+      "subTitle": "System development",
+      "desc": "A metrics system with implemented metrics that track occupancy, average length of stay and cancellation frequency. This provides more efficient management and an improved user experience.",
+      "result": "The project is a hotel booking service with implemented metrics that track occupancy, average length of stay and cancellation frequency. This provides more efficient management and improved user experience.",
+      "resultTag": "Result",
+      "next": "Next",
+      "project": "Discuss project",
+      "merlines": "Development of a gambling platform"
+    },
+    "Ege": {
+      "title": "ЕГЭшка",
+      "subTitle": "App Development",
+      "desc": "A cross-platform mobile application aimed at accelerating the memorization of materials necessary for successfully passing the Unified State Exam (EGE).",
+      "result": "Users received a convenient tool for effective EGE preparation. The application helps accelerate the memorization process through interactive learning methods, tests, and repetitions. An improved progress tracking system allows students to identify weak areas and focus on key topics. Thanks to cross-platform development, the app is available on both iOS and Android, expanding its user reach.",
+      "resultTag": "Result",
+      "next": "Next",
+      "project": "Discuss the Project",
+      "merlines": "App Development"
+    },
+    "Simplanium": {
+      "title": "Simplanum",
+      "subTitle": "App Development",
+      "desc": "We developed a mobile application for collaborative planning.",
+      "result": "Users received a convenient mobile application for collaborative planning of tasks and events. The application enables teams and individuals to efficiently coordinate their actions, manage schedules, and distribute tasks in real time. Its intuitive interface and calendar integration ensure ease of use, while cross-platform development allows accessibility on both iOS and Android.",
+      "resultTag": "Result",
+      "next": "Next",
+      "project": "Discuss the Project",
+      "merlines": "App Development"
+    }
+  },
+  "Service": {
+    "title": "Services and solutions",
+    "comment": "We use flexible development methods, adapting to the client's desires and budget.",
+    "manager": "Project manager",
+    "analyticsTitle": "Project analytics",
+    "analyticsDesc": "We fully immerse ourselves in the product, researching the best cases in the market.",
+    "machineTitle": "Machine learning",
+    "machineDesc": "We create and implement unique AI solutions to optimize and improve business processes. We adapt these solutions to specific industries/projects.",
+    "designTitle": "Design",
+    "designDesc": "We create a comfortable user experience with the product.",
+    "mobileTitle": "Mobile app development",
+    "mobileDesc": "We develop cross-platform mobile applications.",
+    "web3Title": "Web3 product development",
+    "web3Desc": "We design and develop innovative solutions based on blockchain and decentralized technologies.",
+    "webTitle": "Web application development",
+    "webDesc": "We create high-performance and scalable web applications.",
+    "igor": "Igor Tarakin"
+  },
+  "AboutPage": {
+    "Hero": {
+      "title": "Soft Premier provides a full range of IT services for the realization of large-scale digital projects"
+    },
+    "Clients": {
+      "title": "Since 2019, we have been trusted by major federal clients: developers, online stores, clinics, pharmaceutical companies, and EdTech companies."
+    },
+    "Potential": {
+      "title": "Our mission is to help technology companies maximize the potential of their ideas by providing cutting-edge solutions.",
+      "desc": "We value transparency, precise planning, and open communication. We use flexible development methods, adapting to the client's desires and budget. We always provide detailed explanations of each development stage, the technology stacks used, and the appropriate tools so that founders and stakeholders can make informed decisions.",
+      "developers": "Developers\nin the team",
+      "projects": "Completed\nprojects",
+      "years": "Years in the\ndevelopment market"
+    },
+    "Media": {
+      "title": "We in the media",
+      "mock_title1": "What is a quick start?",
+      "mock_desc1": "We provide a preliminary estimate within 24 hours.\nWe start in 2 days.",
+      "mock_title2": "Ramonsky rabbit",
+      "mock_desc2": "We optimized the operation of a rabbit farm using\na large ERP information system based on the\nMikhailov system."
+    }
+  },
+  "Work": {
+    "title": "Career at Soft Premier",
+    "all": "All",
+    "desc": "We are looking for those who are driven by unconventional tasks and the search for solutions that will become new trends in development.",
+    "vacancies": "Vacancies",
+    "empty": "Empty",
+    "partOfTeam": "How to become part of the team",
+    "showMore": "Show More",
+    "Team": {
+      "title": "How to become part of the team?",
+      "choiceTitle": "Choice",
+      "choiceDesc": "Choose a position that matches your experience.",
+      "resumeTitle": "Resume",
+      "resumeDesc": "Send your resume, optionally attaching a cover letter with information about yourself or links to Habr and other resources.",
+      "answerTitle": "Response",
+      "answerDesc": "If positively reviewed, expect a response from our HR within three days.",
+      "comment": "We value openness, passion for innovation, and responsibility above all.",
+      "igor": " Igor Tarakin"
+    }
+  },
+  "Cookie": {
+    "title": "With cookies, the grass is greener and websites are better. Shall we continue with them?",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "Error": {
+    "title": "​​And here it is, the 404 error! Return to the homepage while we search for the page you were looking for.",
+    "btn": "← Back to home"
+  },
+  "ServicePage": {
+    "title": "Technological solutions for your growth",
+    "List": {
+      "title": "Services",
+      "details": "Details needed +",
+      "aiTitle": "Artificial Intelligence\nand Machine Learning",
+      "aiDesc": "We develop AI products that improve business processes, automate routine tasks, and optimize resources.",
+      "web3Title": "Web3\nand Blockchain Development",
+      "web3Desc": "We design and develop innovative solutions based on blockchain and decentralized technologies. We create products that ensure security, transparency, and new opportunities for businesses in the Web3 world.",
+      "mobileTitle": "iOS and Android\nApp Development",
+      "mobileDesc": "We develop cross-platform mobile applications using optimal and efficient tools.",
+      "webTitle": "Web Development",
+      "webDesc": "We create high-performance and scalable websites using modern frameworks and programming languages.",
+      "digitalTitle": "Business Digitalization\nand Process Optimization",
+      "digitalDesc": "We implement CRM/ERP/BPM systems with a wide range of capabilities tailored to your business processes.",
+      "consultingTitle": "Technical Consulting\nand Audit",
+      "consultingDesc": "We conduct fast and high-quality research on systems and products used for your business. We then present our findings and provide expert recommendations."
+    },
+    "Modal": {
+      "desc": "We fully immerse ourselves in the product, research the best cases in the market, analyze competitors, and the technology stacks they use.",
+      "btn": "→ Discuss project",
+      "time": "Work format",
+      "step": "Key steps",
+      "map": "Rate card"
+    },
+    "Work": {
+      "title": "Work formats",
+      "subTitle": "Sprint & Fix",
+      "sprintTitle": "Sprint",
+      "sprintDesc1": "A format where the project is divided into short development cycles (sprints) lasting",
+      "sprintDesc2": "from 1 to 4 weeks.",
+      "sprintDesc3": "In each sprint, the team sets specific goals and tasks, works on them, then reviews the outcomes and adjusts further work.",
+      "sprintFooter": "Suitable for projects where the client wants to see progress quickly and make prompt adjustments.",
+      "fixTitle": "Fix",
+      "fixDesc1": "A format where the tasks, cost, and project deadlines are pre-defined and fixed in the contract. This allows the client to",
+      "fixDesc2": "plan expenses and deadlines,",
+      "fixDesc3": "but requires thorough planning of the project details at the initial stage.",
+      "fixFooter": "Suitable for projects that require more time for implementation.",
+      "List": {
+        "title": "Services",
+        "details": "Need details +",
+        "analyticsTitle": "Project analytics",
+        "analyticsDesc": "We fully immerse ourselves in the product, research the best cases in the market, analyze competitors, and the technology stacks they use.",
+        "machineTitle": "Machine Learning",
+        "machineDesc": "We develop AI products that enhance business processes, automate routine tasks, and optimize resources.",
+        "designTitle": "Design",
+        "designDesc": "We create intuitive and attractive interfaces, providing users with a comfortable experience interacting with the product.",
+        "mobileTitle": "Mobile app development",
+        "mobileDesc": "We develop cross-platform mobile applications using the most optimal and efficient tools.",
+        "web3Title": "Web3 product Development",
+        "web3Desc": "We design and develop innovative solutions based on blockchain and decentralized technologies. We create products that ensure security, transparency, and new opportunities for business in the Web3 world.",
+        "webTitle": "Web application development",
+        "webDesc": "We create high-performance and scalable web applications using modern frameworks and programming languages."
+      },
+      "Modal": {
+        "btn": "→ Discuss project",
+        "time": "What you will do",
+        "step": "What is important to us",
+        "map": "What we dffer",
+        "workTitle": "Apply for the job",
+        "name": "Name",
+        "phone": "Preferred contact method",
+        "phoneLabel": "Contact method",
+        "comm": "Briefly about me (optional)",
+        "file": "📎 Attach resume",
+        "submit": "→ Submit application",
+        "checkbox1": "I agree with the",
+        "checkbox2": "privacy policy"
+      }
+    },
+    "Projects": {
+      "title": "Key projects",
+      "desc": "Projects",
+      "more": "More projects",
+      "everypetDesc": "Developed the server part for a social network of pet owners. Implemented user data management, integration with external services and security.",
+      "merlinesDesc": "We created the Merlines service for searching available train, car, and airline tickets. We designed and implemented an architecture with a unique meta-search system.",
+      "petDesc": "We developed the server-side for a social network for pet owners. We implemented user data management, integration with external services, and ensured security.",
+      "Merlines": {
+        "title": "Merlines",
+        "subTitle": "Development of a Meta-Search system",
+        "desc": "Merlines is a service for searching cheap rail, auto and air tickets. The team developed a service that allows collecting statistics on search queries, publishing content and mailing. The team was engaged in finalization of the Merlines project for the project launch on the market. market.",
+        "result": "The Merlines platform has successfully entered the market due to its intuitive design and stable functioning, which made it popular among users.",
+        "resultTag": "Result",
+        "next": "Next",
+        "project": "Discuss project",
+        "merlines": "System development"
+      },
+      "EveryPet": {
+        "title": "EveryPet",
+        "subTitle": "System development",
+        "desc": "Everypet is a social network for pet owners, where people can share information about their pets, browse thematic communities, monitor their pets and make appointments with specialists. The team was engaged in the development and linking of the server part of the project Everypet.",
+        "result": "The service for pet owners has become in demand due to the ability to share experience and knowledge about pets, participate in specialized communities and manage the care of their pets, including appointments with specialists.",
+        "resultTag": "Result",
+        "next": "Next",
+        "project": "Discuss project",
+        "merlines": "System development"
+      }
+    },
+    "Contract": {
+      "title": "Work process",
+      "subTitle": "Before signing the contract",
+      "start": "Start",
+      "middle": "after 24 hours",
+      "finish": "contract signing",
+      "step1": "We get acquainted and discuss the project in detail",
+      "step2": "We conduct initial product and technical analysis of the project",
+      "step2Desc": "We send a preliminary estimate",
+      "step3": "We discuss the project again and clarify all aspects",
+      "step4": "We create a technical-commercial proposal and a project development Roadmap",
+      "step5": "We sign the contract and start development"
+    },
+    "StepBlock": {
+      "title": "Work process after signing the contract",
+      "subTitle": "Key\nstages",
+      "comment": "We use flexible development methods, adapting to the client's desires and budget.",
+      "manager": "Project manager",
+      "analizeTitle": "Analysis",
+      "structureTitle": "Structure",
+      "devTitle": "Development",
+      "supportTitle": "Support",
+      "param1": "Studying",
+      "param2": "the project and preparing recommendations",
+      "param3": "Creating",
+      "param4": "and developing business processes",
+      "param5": "Preparing",
+      "param6": "technical requirements and strategies",
+      "param7": "Analytics Department",
+      "param8": "Selecting",
+      "param9": "technologies and tools",
+      "param10": "for implementation",
+      "param11": "Preparing",
+      "param12": "design layouts and prototypes",
+      "param13": "Aligning",
+      "param14": "project components",
+      "param15": "Design Department",
+      "p16": "Analytics Department",
+      "p17": "Implementing the project",
+      "p18": "according to agreements and technical requirements",
+      "p19": "Maintaining communication",
+      "p20": "and reviewing completed work",
+      "p21": "Deploying",
+      "p22": "and integrating solutions",
+      "p23": "Development Department",
+      "p24": "Making changes during",
+      "p25": "post-project",
+      "p26": "work",
+      "p27": "Providing",
+      "p28": "server",
+      "p29": "and",
+      "p30": "technical",
+      "p31": "support",
+      "p32": "Providing",
+      "p33": "consultations",
+      "p34": "and helping to improve your project",
+      "igor": "Igor Tarakin"
+    }
+  },
+  "Form": {
+    "title": "Hello! we are very interested in learning more about your project.",
+    "desc": "Submit a request or write to us",
+    "error": "It looks like you made a mistake somewhere,\nplease fill out the form correctly",
+    "name": "Name",
+    "phone": "Preferred contact method",
+    "phoneLabel": "Contact method",
+    "comm": "Briefly about the project",
+    "file": "📎 Attach file or specification",
+    "fileReady": "📎 File attached",
+    "btn": "→ Submit Request",
+    "required": "Required",
+    "emailError": "Not valid email",
+    "checkbox1": "I agree with the",
+    "checkbox2": "privacy policy",
+    "map": "8 Presnenskaya Embankment, Bldg. 1, Moscow, 143409, Russia",
+    "Success": {
+      "title": "Thank you! Your request is already on its way to our caring managers, we will contact you soon!",
+      "btn": "← Back to Home"
+    }
+  },
+  "Contact": {
+    "title": "Contacts",
+    "desc": "+7 (916) 995 73 68\nsales@softpremier.io",
+    "moscow": "Moscow",
+    "dubai": "Dubai",
+    "moscowAddress": "8 Presnenskaya Embankment, Bldg. 1, Moscow, 143409, Russia",
+    "dubaiAddress": "One Central, 8th and 9th floor, Shopping Center, Mall 2, Dubai, United Arab Emirates.",
+    "mail": "Press Office"
+  },
+  "Team": {
+    "title": "60+ Experts",
+    "subTitle": "Team",
+    "btn": "Want to join our team?",
+    "dev": "Development Department",
+    "design": "Design Department"
+  },
+  "ServiceAI": {
+    "title": "Artificial Intelligence\nand Machine Learning",
+    "desc": "We develop AI products that improve business processes, automate routine tasks, and optimize resources.",
+    "blockTitle": "Benefits\nof Working with Us",
+    "projects": "Developed Projects",
+    "indTitle": "Custom Solutions",
+    "indDesc": "Unique business requirements are met by selecting or developing AI models perfectly suited to the task at hand.",
+    "techTitle": "Modern Technologies",
+    "techDesc": "Python, C++, TensorFlow, PyTorch, ONNX",
+    "integrTitle": "Service Integrations",
+    "integrDesc": "We integrate our models into websites, applications, and Telegram bots to enhance user experience.",
+    "proTitle": "High Performance",
+    "proDesc": "Optimizing the codebase and server load ensures maximum model processing speed.",
+    "supportTitle": "Support and Project Development",
+    "supportDesc": "We maintain and improve the models we've created to adapt to evolving business needs.",
+    "Steps": {
+      "title": "Work Process",
+      "subTitle": "Key\nStages",
+      "Analyze": {
+        "title": "Analysis",
+        "sbor": "Collecting",
+        "treb": "requirements",
+        "opred": "Defining",
+        "metr": "model quality metrics",
+        "podgt": "Preparing",
+        "tz": "technical specifications"
+      },
+      "Project": {
+        "title": "Design",
+        "vibor": "Selecting",
+        "models": "from existing models or",
+        "project": "designing",
+        "zero": "a model from scratch",
+        "podgt": "Preparing",
+        "data": "training data",
+        "oneModel": "for the model",
+        "arch": "Enterprise architector"
+      },
+      "Dev": {
+        "title": "Development",
+        "create": "Creating or integrating",
+        "model": "the model",
+        "study": "Training the model",
+        "data": "on pre-prepared data",
+        "test": "Testing",
+        "work": "its functionality",
+        "back": "Back-end developer"
+      },
+      "Support": {
+        "title": "Support",
+        "work": "Model refinement",
+        "newData": "as new data emerges",
+        "obes": "Ensuring",
+        "server": "server",
+        "and": "and",
+        "tech": "technical",
+        "support": "support",
+        "cons": "Consulting",
+        "future": "on further project development"
+      }
+    },
+    "Methods": {
+      "title": "Technologies\nand Methods",
+      "comment": "We select the optimal technology stack for each project, using only proven and modern tools that we excel in.",
+      "name": "Igor Tarakin",
+      "role": "Project Manager",
+      "text": "Text/Image/Audio Annotation",
+      "pipe": "ETL Pipelines",
+      "igor": "Igor Tarakin"
+    },
+    "Prices": {
+      "title": "Service Costs",
+      "btn": "→ Discuss the Project",
+      "from": "from",
+      "Integration": {
+        "title": "Integration of Existing AI Models via API",
+        "param1": "Fast launch of a Minimum Viable Product (MVP)",
+        "param2": "Ideal for chatbots",
+        "param3": "Easily integrates into websites, mobile apps, and Telegram MiniApps",
+        "param4": "Helps save on server infrastructure costs",
+        "param5": "Flexible scalability"
+      },
+      "AI": {
+        "title": "Using Pre-Trained AI Models with Additional Training",
+        "param1": "High accuracy of results",
+        "param2": "Quick adaptation to specific tasks",
+        "param3": "Scalable performance – the model is deployed in the appropriate infrastructure",
+        "param4": "Independence from cloud APIs – the model runs on your servers"
+      },
+      "DEV": {
+        "title": "Developing an AI Model from Scratch",
+        "param1": "A unique solution tailored specifically for your business",
+        "param2": "Ability to use unique company datasets, process specific formats, and conduct experiments with architecture",
+        "param3": "Maximum optimization – a custom-built model architecture perfectly aligns with the server infrastructure"
+      }
+    },
+    "Tasks": {
+      "title": "Frequently Asked Questions",
+      "notAnswer": "Didn't find the answer to your question?",
+      "btnTitle": "Let's discuss your project",
+      "btn": "→ Discuss the Project",
+      "List": {
+        "param1Title": "Do I need my own data to use your services?",
+        "param1Desc": "No, not always. If you choose to integrate ready-made solutions via API, your own data is not required. For additional training of pre-existing models or development from scratch, data is preferred, but we can help collect and prepare datasets if you don’t have them.",
+        "param2Title": "How long does it take to implement a neural network solution?",
+        "param2Desc": "It all depends on the chosen approach. API integration can yield results within one to two weeks. Fine-tuning a pre-trained model takes from a few weeks to six months, depending on task complexity and data volume. Developing a model from scratch may take six months or longer.",
+        "param3Title": "What accuracy guarantees can you provide?",
+        "param3Desc": "We focus on metrics such as Accuracy, F1-score, Recall, etc., which we agree upon during the technical specification stage. The more extensive and high-quality your dataset, the higher the potential accuracy. When integrating pre-trained API solutions, accuracy depends on the provider, but in most cases, they already offer high-performance models.",
+        "param4Title": "How can we scale the ready-made solution?",
+        "param4Desc": "We use modern MLOps tools and cloud technologies (Docker, Kubernetes, AWS, GCP, Azure), which allow easy scaling as demand increases. For API-based integration, scalability is usually handled by the provider.",
+        "param5Title": "How much does it cost and what does the price depend on?",
+        "param5Desc": "The cost is calculated based on project complexity, required time, and data volume. API integration is the most cost-effective option as it does not require significant computing resources. Fine-tuning pre-trained models is more expensive but still saves time compared to creating a model from scratch. Full custom development is the most resource-intensive approach, but it offers the highest flexibility and control over the final outcome."
+      }
+    }
+  },
+  "ServiceWeb3": {
+    "title": "Web3 and Blockchain\nDevelopment",
+    "desc": "We design and develop innovative solutions based on blockchain and decentralized technologies. We create products that ensure security, transparency, and new opportunities for businesses in the Web3 world.",
+    "blockTitle": "Benefits\nof Working with Us",
+    "projects": "Developed Projects",
+    "indTitle": "Custom Solutions",
+    "indDesc": "We help our clients define the necessary functionality to create ideal Web3 solutions.",
+    "techTitle": "Modern Technologies",
+    "techDesc": "Solidity, Vyper, Rust, C++, Golang, Python",
+    "integrTitle": "Security and Guarantees",
+    "integrDesc": "Comprehensive testing and auditing of smart contracts, minimizing risks when deploying to the blockchain.",
+    "proTitle": "Service Integrations",
+    "proDesc": "We can add crypto wallets to your solution and integrate your service into traditional Web2 products.",
+    "supportTitle": "Support and Project Development",
+    "supportDesc": "We maintain and improve products, as well as create strategies for feature expansion in future updates.",
+    "Steps": {
+      "title": "Work Process",
+      "subTitle": "Key\nStages",
+      "Analyze": {
+        "title": "Analysis and Design",
+        "sbor": "Collecting",
+        "treb": "requirements",
+        "opred": "Defining",
+        "metr": "product boundaries and functions",
+        "podgt": "Preparing",
+        "tz": "technical specifications"
+      },
+      "Project": {
+        "title": "Development",
+        "create": "Creating",
+        "contract": "smart contracts",
+        "project": "Designing",
+        "data": "data",
+        "podg": "Preparing",
+        "back": "backend",
+        "and": "and",
+        "polz": "user interface",
+        "neob": "(if necessary)",
+        "backEnd": "Back-end developer",
+        "frontEnd": "Front-end developer"
+      },
+      "Dev": {
+        "title": "Testing",
+        "provod": "Conducting",
+        "aud": "audits, bug bounty, and deployment",
+        "test": "to a test network"
+      },
+      "Support": {
+        "title": "Support",
+        "oper": "Quickly",
+        "ystr": "fixing issues",
+        "obes": "Providing server and technical support",
+        "server": "server",
+        "and": "and",
+        "tech": "technical",
+        "support": "support",
+        "add": "Adding",
+        "feaut": "new features",
+        "osysh": "Facilitating",
+        "l2": "Layer 2 migration"
+      }
+    },
+    "Methods": {
+      "title": "Technologies\nand Methods",
+      "comment": "We select the optimal technology stack for each project, using only proven and modern tools that we excel in.",
+      "name": "Igor Tarakin",
+      "db": "Databases",
+      "role": "Project Manager"
+    },
+    "Prices": {
+      "title": "Service Costs",
+      "btn": "→ Discuss the Project",
+      "from": "from",
+      "Token": {
+        "title": "Creating a New Token",
+        "param1": "Fast launch of a Minimum Viable Product (MVP)",
+        "param2": "Potential future expansion into a full ecosystem",
+        "param3": "Strengthening brand identity",
+        "param4": "The token can be used for crowdfunding (ICO, IDO, IEO) or to attract venture capital and angel investors.",
+        "param5": "Possibility to add custom features (restrictions, freezing, access roles) and undergo an audit to reduce risks."
+      },
+      "DEX": {
+        "title": "Building Large-Scale Systems like DEX",
+        "param1": "Your users will be able to exchange assets directly (peer-to-peer).",
+        "param2": "Global user reach.",
+        "param3": "Ability to add new tokens, staking programs, lending protocols, and other DeFi services, making the platform more attractive.",
+        "param4": "Smart contract code (with audit) ensures transparent rules, and all transactions are visible on the blockchain."
+      },
+      "Chain": {
+        "title": "Developing a Custom Blockchain",
+        "param1": "Maximum flexibility and customization.",
+        "param2": "Building from scratch allows optimizing the network for specific needs: throughput, block confirmation speed, and fee minimization.",
+        "param3": "Enterprise-level security.",
+        "param4": "You become not just a participant but the owner of the infrastructure. This enhances credibility and attractiveness for investors and partners, as you control the entire technological stack."
+      }
+    },
+    "Tasks": {
+      "title": "Frequently Asked Questions",
+      "notAnswer": "Didn't find the answer to your question?",
+      "btnTitle": "Let's discuss your project",
+      "btn": "→ Discuss the Project",
+      "List": {
+        "param1Title": "How long does it take to develop and launch a custom token?",
+        "param1Desc": "Typically, it takes anywhere from a few weeks to a couple of months for a standard project (e.g., ERC-20 on Ethereum). The timeline depends on the complexity of the logic (additional features, roles, emission mechanics) and whether an audit is required.",
+        "param2Title": "Is a smart contract audit necessary, and who handles it?",
+        "param2Desc": "Yes, an audit is highly recommended. It helps identify and fix critical vulnerabilities before deployment.",
+        "param3Title": "How do I decide whether to build my own blockchain or launch a token on an existing network?",
+        "param3Desc": "If you need full control over the protocol (consensus level, fees, specific logic), then developing your own blockchain makes sense. However, if you want a faster, lower-budget launch and access to a broad ecosystem (wallets, exchanges), using an existing network (Ethereum, BNB Chain, Polygon) is often the best choice.",
+        "param4Title": "Will my token automatically be listed on exchanges (DEX/CEX)?",
+        "param4Desc": "Not automatically. On decentralized exchanges (DEX), you can add a liquidity pool yourself (e.g., on Uniswap or PancakeSwap). For centralized exchanges (CEX), listing requires an application process where the exchange evaluates your project before approval. We can assist with the technical aspects (development, documentation), but the final listing decision rests with the exchange."
+      }
+    }
+  },
+  "ServiceMobile": {
+    "title": "iOS and Android\nApp Development",
+    "desc": "We develop cross-platform mobile applications using optimal and efficient tools.",
+    "blockTitle": "Benefits\nof Working with Us",
+    "projects": "Developed Projects",
+    "indTitle": "Custom\nSolutions",
+    "indDesc": "We create mobile products that best meet your business needs.",
+    "techTitle": "Modern\nTechnologies",
+    "techDesc": "Flutter, Java, Swift, Kotlin, C++, React Native",
+    "integrTitle": "High\nPerformance",
+    "integrDesc": "Our apps run smoothly and efficiently, providing the best user experience.",
+    "proTitle": "Service\nIntegrations",
+    "proDesc": "Easily integrate payment systems, delivery services, and maps into your products.",
+    "supportTitle": "Support\nand Project Development",
+    "supportDesc": "We help our clients with the ongoing development of their projects and offer strategies for feature expansion.",
+    "Steps": {
+      "title": "Work Process",
+      "subTitle": "Key\nStages",
+      "Analyze": {
+        "title": "Analysis and Design",
+        "sbor": "Collecting",
+        "treb": "requirements",
+        "opred": "Defining",
+        "metr": "product boundaries and functions",
+        "podgt": "Preparing",
+        "tz": "technical specifications"
+      },
+      "Project": {
+        "title": "Development",
+        "create": "Creating and approving",
+        "contract": "design",
+        "podg": "Preparing",
+        "server": "server-side",
+        "back": "(Back-end)",
+        "ver": "Building",
+        "polz": "user interface",
+        "front": "(Front-end)",
+        "backEnd": "Back-end developer",
+        "frontEnd": "Front-end developer",
+        "design": "UX/UI-designer"
+      },
+      "Dev": {
+        "title": "Testing",
+        "provod": "Fully",
+        "system": "testing the system",
+        "ystr": "Fixing",
+        "lyb": "any",
+        "error": "issues"
+      },
+      "Support": {
+        "title": "Support",
+        "pomog": "Helping",
+        "razv": "develop",
+        "and": "and",
+        "ylysh": "improve the project",
+        "soot": "according to your needs"
+      }
+    },
+    "Methods": {
+      "title": "Technologies\nand Methods",
+      "comment": "We select the optimal technology stack for each project, using only proven and modern tools that we excel in.",
+      "name": "Igor Tarakin",
+      "db": "Databases",
+      "role": "Project Manager"
+    },
+    "Prices": {
+      "title": "Service Costs",
+      "btn": "→ Discuss the Project",
+      "from": "from",
+      "MVP": {
+        "title": "Creating an MVP (Minimum Viable Product)",
+        "param1": "Fast market entry",
+        "param2": "Cost optimization by focusing only on core features",
+        "param3": "Quickly determine product demand and adjust development strategy based on data and feedback",
+        "param4": "A solid foundation for future growth",
+        "param5": "Investor presentation - a strong argument that increases the chances of funding"
+      },
+      "DEV": {
+        "title": "Development of a Multifunctional Mobile App",
+        "param1": "A wide range of features",
+        "param2": "A multifunctional app provides more use cases, increases user retention, and boosts loyalty.",
+        "param3": "Scalable architecture",
+        "param4": "Integrate CRM, payment gateways, marketing tools, and other services to simplify internal processes and data analysis."
+      },
+      "App": {
+        "title": "Development of a Corporate (Enterprise) Application",
+        "param1": "Deep integration with business processes",
+        "param2": "Implementation of corporate data protection policies (encryption, SSO, access control) following GDPR, ISO, and other regulations.",
+        "param3": "Microservices architecture, server clusters, and regular backups ensure uninterrupted operation.",
+        "param4": "Detailed application performance analytics, employee interaction tracking, comprehensive reports for management, and integration with BI systems."
+      }
+    },
+    "Tasks": {
+      "title": "Frequently Asked Questions",
+      "notAnswer": "Didn't find the answer to your question?",
+      "btnTitle": "Let's discuss your project",
+      "btn": "→ Discuss the Project",
+      "List": {
+        "param1Title": "How long does mobile app development take, and what affects the timeline?",
+        "param1Desc": "Typically, it takes anywhere from a few months to half a year, depending on project complexity, the number of features, the need for custom design, and integration with third-party systems. An MVP can be released faster, whereas multifunctional and enterprise apps require more thorough development.",
+        "param2Title": "Should I start with an MVP or develop a full-fledged app right away?",
+        "param2Desc": "If you're launching a new product and want to validate your idea, an MVP is the best way to reduce risks, gather feedback from early users and investors. However, if you already have a clear concept and confirmed demand, you can proceed directly with full-scale development.",
+        "param3Title": "Can I scale the app later and add new features?",
+        "param3Desc": "Of course. During development, we ensure a scalable architecture that allows adding new modules (payments, chat, analytics, etc.) without a complete app overhaul. The key is to plan for this scalability in the early stages when choosing technologies.",
+        "param4Title": "How can I ensure user data security in a mobile app?",
+        "param4Desc": "We implement data encryption, use secure protocols (HTTPS, TLS), set up authentication systems, and manage access control. Additional security measures include multi-factor authentication and compliance with industry standards (GDPR, ISO), especially for enterprise solutions."
+      }
+    },
+    "Projects": {
+      "title": "Key Projects",
+      "desc": "Projects",
+      "more": "More Projects",
+      "egeDesc": "A cross-platform mobile app designed to accelerate memorization of materials needed for successful exam preparation.",
+      "simplDesc": "Developed a mobile app for collaborative planning."
+    }
+  },
+  "ServiceWeb": {
+    "title": "Web Development",
+    "desc": "We create high-performance and scalable websites using modern frameworks and programming languages.",
+    "blockTitle": "Benefits\nof Working with Us",
+    "projects": "Developed Projects",
+    "indTitle": "Custom\nSolutions",
+    "indDesc": "We do not use website builders—each product we develop is tailored to the specific needs of the client.",
+    "techTitle": "Modern\nTechnologies",
+    "techDesc": "React.js, Vue.js, Next.js, Nest.js, Golang, Python, C++, Java",
+    "integrTitle": "High\nUser Experience",
+    "integrDesc": "When designing interfaces, we follow the best global UX/UI practices.",
+    "proTitle": "Service\nIntegrations",
+    "proDesc": "We handle a wide range of third-party system integrations of any complexity.",
+    "supportTitle": "Support\nand Project Development",
+    "supportDesc": "We always help our clients with the ongoing development of their projects and provide strategies for feature expansion.",
+    "Steps": {
+      "title": "Work Process",
+      "subTitle": "Key Stages",
+      "Analyze": {
+        "title": "Analysis and Design",
+        "sbor": "Collecting",
+        "treb": "requirements",
+        "opred": "Defining",
+        "metr": "product boundaries and functions",
+        "podgt": "Preparing",
+        "tz": "technical specifications"
+      },
+      "Project": {
+        "title": "Development",
+        "create": "Creating and approving",
+        "design": "design",
+        "podg": "Preparing",
+        "server": "server-side",
+        "back": "(Back-end)",
+        "ver": "Building",
+        "polz": "user interface",
+        "front": "(Front-end)",
+        "backEnd": "Back-end developer",
+        "frontEnd": "Front-end developer",
+        "designer": "UX/UI-designer"
+      },
+      "Dev": {
+        "title": "Testing",
+        "provod": "Fully",
+        "system": "testing the system",
+        "ystr": "Fixing",
+        "lyb": "any",
+        "error": "issues"
+      },
+      "Support": {
+        "title": "Support",
+        "pomog": "Helping",
+        "razv": "develop",
+        "and": "and",
+        "ylysh": "improve the project",
+        "soot": "according to your needs"
+      }
+    },
+    "Methods": {
+      "title": "Technologies\nand Methods",
+      "comment": "We select the optimal technology stack for each project, using only proven and modern tools that we excel in.",
+      "name": "Igor Tarakin",
+      "db": "Databases",
+      "role": "Project Manager"
+    },
+    "Prices": {
+      "title": "Service Costs",
+      "btn": "→ Discuss the Project",
+      "from": "from",
+      "MVP": {
+        "title": "Creating an MVP Website (Minimum Viable Product)",
+        "param1": "Allows you to quickly present your idea or service to users, collect initial feedback, and test demand.",
+        "param2": "Minimal startup costs",
+        "param3": "An MVP serves as a foundation: you can gradually add new features and improve the design.",
+        "param4": "Fast hypothesis testing",
+        "param5": "Convenient presentation for partners and investors"
+      },
+      "Business": {
+        "title": "Development of a Corporate/Business Website",
+        "param1": "Professional design and brand identity",
+        "param2": "Includes sections for services, portfolio, blog, contact forms, online booking—everything needed for effective client interaction.",
+        "param3": "SEO optimization",
+        "param4": "Integration of CRM systems, analytics tools, email marketing, and payment gateways to streamline internal processes and increase conversion rates."
+      },
+      "Commerc": {
+        "title": "Development of a Large Internet Portal\nor E-Commerce Platform",
+        "param1": "Architecture is designed in advance to handle high traffic loads.",
+        "param2": "Complex logic and integrations",
+        "param3": "Uses fail-safe server solutions, load balancing, backups, and regular security updates.",
+        "param4": "Multi-currency support and integration with various payment systems.",
+        "param5": "Compliance with security standards (PCI DSS, GDPR), encryption, regular audits, and data backups to enhance customer trust and reduce hacking risks."
+      }
+    },
+    "Tasks": {
+      "title": "Frequently Asked Questions",
+      "notAnswer": "Didn't find the answer to your question?",
+      "btnTitle": "Let's discuss your project",
+      "btn": "→ Discuss the Project",
+      "List": {
+        "param1Title": "How long does it take to create a website, and what affects the timeline?",
+        "param1Desc": "On average, it takes from a few weeks (for a simple MVP) to 6-9 months (for complex projects such as e-commerce platforms or portals). The duration depends on the number of features, level of design, third-party integrations, and revision cycles during development.",
+        "param2Title": "Will my website be mobile-friendly and responsive?",
+        "param2Desc": "Yes, we use a mobile-friendly and responsive design approach to ensure the website looks and functions correctly on smartphones, tablets, and desktops. This improves user experience and search engine rankings.",
+        "param3Title": "What analytics and marketing tools will be integrated into the website?",
+        "param3Desc": "At a minimum, we integrate Google Analytics (or alternatives) and SEO optimization tools (structured data, meta tags). Additionally, we can integrate email marketing platforms, CRM systems, or advertising pixels (Facebook, Google Ads) for targeted promotions and traffic analysis.",
+        "param4Title": "How can I manage and update website content myself?",
+        "param4Desc": "We use a CMS (Content Management System) such as Python Django Admin, 1C-Bitrix, Drupal, etc., allowing you to edit text, upload images, and create new pages without coding knowledge. If needed, we provide training and documentation."
+      }
+    }
+  },
+  "ServiceDigital": {
+    "title": "Business Digitalization\nand Process Optimization",
+    "desc": "We implement CRM/ERP/BPM systems with a wide range of capabilities tailored to your business processes.",
+    "blockTitle": "Benefits\nof Working with Us",
+    "projects": "Digitized Businesses",
+    "indTitle": "Creating a\nProcess Map",
+    "indDesc": "Identifying and describing the sequence of actions involving employees, clients, and partners.",
+    "techTitle": "Collecting Metrics",
+    "techDesc": "Analyzing execution time, costs, and potential errors at each stage.",
+    "integrTitle": "Customized Selection\nof Technologies",
+    "integrDesc": "We select tools (CRM/ERP/BPM systems, e-commerce platforms, electronic document management systems, etc.) based on the client's needs.",
+    "proTitle": "Creating a\nTransition Plan",
+    "proDesc": "Step-by-step implementation of technologies, employee training, and integration with third-party services.",
+    "Steps": {
+      "title": "Work Process",
+      "subTitle": "Key\nStages",
+      "Analyze": {
+        "title": "Diagnosis\nand Planning",
+        "sbor": "Gathering and analyzing",
+        "treb": "current business processes",
+        "opred": "Defining",
+        "potreb": "needs",
+        "and": "and",
+        "prior": "priorities",
+        "sozd": "Creating",
+        "plan": "an action plan",
+        "kons": "Digital Transformation Consultant"
+      },
+      "Project": {
+        "title": "Implementation\nand Integration",
+        "nastr": "Configuring",
+        "and": "and",
+        "dorab": "customizing",
+        "system": "systems",
+        "razrab": "Developing",
+        "neob": "necessary internal services/applications"
+      },
+      "Dev": {
+        "title": "Launch",
+        "provod": "Conducting",
+        "tren": "employee training,",
+        "sozd": "creating",
+        "faq": "user guides and FAQs",
+        "kontrol": "Monitoring and analyzing",
+        "fast": "results, making quick",
+        "prav": "adjustments",
+        "neo": "if necessary",
+        "spec": "Training Specialists / Methodologists"
+      },
+      "Support": {
+        "title": "Support\nand Development",
+        "analyze": "Continuously analyzing system performance",
+        "post": "collecting metrics on an ongoing basis",
+        "grow": "As the company grows or its structure changes,",
+        "korrect": "we adjust systems and processes accordingly.",
+        "support": "Support Service"
+      }
+    },
+    "Methods": {
+      "title": "Technologies\nand Methods",
+      "comment": "We select the optimal technology stack for each project, using only proven and modern tools that we excel in.",
+      "name": "Igor Tarakin",
+      "db": "Databases",
+      "role": "Project Manager",
+      "methods": "Methodologies and Frameworks",
+      "bpmn": "BPM platforms and process automation systems (Workflow)",
+      "rpa": "Integration and RPA (Robotic Process Automation) tools",
+      "analytics": "Analytics, monitoring, and data visualization"
+    },
+    "Prices": {
+      "title": "Service Costs",
+      "btn": "→ Discuss the Project",
+      "from": "from",
+      "Auto": {
+        "title": "Automation of Document Flow\nand Routine Processes",
+        "param1": "Reduction of paper bureaucracy",
+        "param2": "Saving time and costs",
+        "param3": "Each document follows a strict workflow, and managers can track the current status of processes.",
+        "param4": "Minimizing human error through automatic checks, hints, and version control systems.",
+        "param5": "Easy integration with other systems"
+      },
+      "CRM": {
+        "title": "Implementation of CRM/ERP/BPM Systems\nand Their Integration\nwith Existing Infrastructure",
+        "param1": "A unified information environment",
+        "param2": "CRM allows better customer segmentation, tracking of the sales funnel, and faster responses to inquiries, increasing loyalty.",
+        "param3": "Optimization of supply chains and inventory management.",
+        "param4": "Automation of complex workflows.",
+        "param5": "Executives gain a comprehensive overview of key performance indicators (KPIs) and metrics, simplifying strategic decision-making."
+      },
+      "Digital": {
+        "title": "Comprehensive Digital Transformation",
+        "param1": "Strategic audit of all processes",
+        "param2": "We integrate CRM, ERP, BPM, analytics systems, electronic document management, and external services (banks, suppliers) into a unified ecosystem.",
+        "param3": "Training employees to use new tools, fostering a culture of continuous improvement and transparent communication.",
+        "param4": "Maximizing efficiency and competitiveness."
+      }
+    },
+    "Tasks": {
+      "title": "Frequently Asked Questions",
+      "notAnswer": "Didn't find the answer to your question?",
+      "btnTitle": "Let's discuss your project",
+      "btn": "→ Discuss the Project",
+      "List": {
+        "param1Title": "How long does the digitalization process take,\nand where should I start?",
+        "param1Desc": "The timeline depends on the scale: you can start small, such as automating document flow in a few weeks. However, full-scale transformation can take months or even years. The first step should always be an audit of current processes and setting clear goals.",
+        "param2Title": "Should we change all processes at once or implement solutions gradually?",
+        "param2Desc": "A phased approach is usually more effective: first, digitalize the most problematic or resource-intensive areas, then expand to other departments and processes. This approach delivers quick results and allows the team to adapt to new tools more easily.",
+        "param3Title": "What are the main benefits of digital transformation for a company?",
+        "param3Desc": "Resource savings, reduction of manual errors, increased transparency and process speed, and improved customer service. Ultimately, the company becomes more competitive, responding faster to market changes and customer needs.",
+        "param4Title": "How do we deal with employee resistance to new technologies?",
+        "param4Desc": "It is crucial to engage employees from the beginning: explain the value of changes, allow them to provide input, and conduct training sessions. When employees see that new tools simplify their work, resistance decreases, and the overall team morale improves.",
+        "param5Title": "How do we determine whether the implemented solutions are effective?",
+        "param5Desc": "Key performance indicators (KPIs) should be established—such as request processing time, cost per document, and customer satisfaction. Using analytics systems (BI dashboards, CRM/ERP reports), you can track these metrics over time. If they improve, the digital transformation is on the right track."
+      }
+    }
+  },
+  "ServiceConsulting": {
+    "title": "Technical\nConsulting and Audit",
+    "desc": "We conduct fast and high-quality research on the systems and products used in your business. We then present our findings and provide expert recommendations.",
+    "blockTitle": "Benefits\nof Working with Us",
+    "indTitle": "Analysis of Current\nIT Infrastructure",
+    "indDesc": "We identify which elements of your IT landscape require urgent updates, optimization, or replacement.",
+    "techTitle": "Performance and\nReliability Diagnostics",
+    "techDesc": "We offer optimization of server code, databases, network infrastructure, or a complete architectural review.",
+    "integrTitle": "Cost and Resource\nOptimization",
+    "integrDesc": "We help reduce the IT budget without compromising quality and increase the efficiency of already paid resources.",
+    "proTitle": "Technical Security Audit",
+    "proDesc": "Comprehensive IT infrastructure assessment, vulnerability detection, attack resistance testing, and data security analysis with recommendations for risk mitigation and security enhancement.",
+    "rekTitle": "Strategic\nRecommendations",
+    "rekDesc": "We assist company leadership in making informed decisions, aligning IT strategy with business objectives, and planning sustainable growth.",
+    "Steps": {
+      "title": "Work Process",
+      "subTitle": "Key Stages",
+      "Analyze": {
+        "title": "Preliminary Preparation and Data Collection",
+        "opred": "Defining goals",
+        "and": "and",
+        "audit": "the scope of the audit",
+        "sbor": "Collecting data",
+        "infr": "on the current infrastructure"
+      },
+      "Project": {
+        "title": "Technical Analysis\nand Diagnostics",
+        "provod": "Conducting",
+        "audit": "infrastructure audit",
+        "vp": "Performing",
+        "nagruz": "load tests",
+        "and": "and",
+        "bez": "security assessments",
+        "analyze": "Analyzing",
+        "code": "codebase and application architecture"
+      },
+      "Dev": {
+        "title": "Report and\nRecommendations",
+        "report": "Compiling a detailed report",
+        "risk": "on the current state: identified issues, severity, potential risks"
+      },
+      "Support": {
+        "title": "Implementation of Improvements\nand Monitoring Results",
+        "razrab": "Developing a detailed plan",
+        "problem": "for issue resolution",
+        "give": "Providing",
+        "rek": "recommendations",
+        "pers": "to personnel",
+        "support": "Offering support",
+        "eks": "in emergency situations"
+      }
+    },
+    "Methods": {
+      "title": "Technologies\nand Methods",
+      "comment": "We select the optimal technology stack for each project, using only proven and modern tools that we excel in.",
+      "name": "Igor Tarakin",
+      "db": "Databases",
+      "role": "Project Manager",
+      "system": "Infrastructure Monitoring and Analysis Systems",
+      "nagruz": "Load and Stress Testing Tools",
+      "bez": "Security Audit Tools and Methodologies",
+      "review": "Code Review and Architectural Audit Methodologies"
+    },
+    "Prices": {
+      "title": "Service Costs",
+      "btn": "→ Discuss the Project",
+      "from": "from",
+      "Express": {
+        "title": "Express Infrastructure Audit",
+        "param1": "Quick overview of weak points",
+        "param2": "Minimal budget and time",
+        "param3": "Results include a prioritized list of issues, allowing immediate focus on critical ones.",
+        "param4": "Receive specific recommendations for basic performance improvements, monitoring setup, and software updates."
+      },
+      "Test": {
+        "title": "In-Depth Performance and Security Testing",
+        "param1": "Load and stress tests",
+        "param2": "Penetration testing and vulnerability assessment",
+        "param3": "Recommendations on load balancing, backup strategies, and clustering to minimize downtime risks.",
+        "param4": "Following the tests, we provide a clear roadmap for scaling infrastructure as the company grows."
+      },
+      "Enterprise": {
+        "title": "Comprehensive Enterprise Architecture Audit",
+        "param1": "We analyze the entire ecosystem—from network infrastructure and business applications to external service and cloud integrations.",
+        "param2": "Assessing current DevOps and CI/CD practices, update efficiency, migrations, and monitoring at every stage.",
+        "param3": "Reviewing licensing agreements, cloud subscriptions, and hardware resources to reduce excessive costs.",
+        "param4": "Providing a phased transformation plan (ranging from months to years), where each iteration delivers measurable improvements in efficiency and security."
+      }
+    },
+    "Tasks": {
+      "title": "Frequently Asked Questions",
+      "notAnswer": "Didn't find the answer to your question?",
+      "btnTitle": "Let's discuss your project",
+      "btn": "→ Discuss the Project",
+      "List": {
+        "param1Title": "How long does a technical audit take, and what affects the timeline?",
+        "param1Desc": "The timeframe depends on the scope: the larger the infrastructure and the deeper the assessment (security, performance, architecture), the more time is required. On average, an express audit takes 1–2 weeks, while a full corporate architecture audit may take six months or more.",
+        "param2Title": "Why do we need a security audit if we don't have public-facing services?",
+        "param2Desc": "Even if your services are not public, internal vulnerabilities can lead to data leaks or system failures. An audit helps identify weak spots in configurations, passwords, access roles, and protects against insider threats or accidental errors.",
+        "param3Title": "What will we receive after the audit?",
+        "param3Desc": "You will receive a detailed report outlining identified issues, their severity, and specific recommendations for resolution. Additionally, we can provide a step-by-step improvement plan, including potential budget savings and performance enhancements.",
+        "param4Title": "Can the audit impact system performance during business hours?",
+        "param4Desc": "We aim to conduct tests and diagnostics with minimal impact on production environments. For load testing or penetration testing, we coordinate schedules with your team to prevent disruptions and downtime.",
+        "param5Title": "What if we don’t have in-house specialists to implement the recommended improvements?",
+        "param5Desc": "In addition to providing recommendations, we offer full support and assistance at every stage. We can fully implement improvements, train your staff, or collaborate with your IT team in a convenient format."
+      }
+    }
+  }
+}

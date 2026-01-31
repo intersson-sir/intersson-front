@@ -1,0 +1,19 @@
+.wrap {
+  border-radius: 12px;
+  border: 1px solid var(--Violet, #5348d1);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  & > span {
+    color: var(--Violet, var(--Violet, #5348d1));
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+}

@@ -1,0 +1,183 @@
+.detailsTitle {
+  color: var(--text);
+  text-align: right;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.4px;
+  white-space: nowrap;
+  margin-left: 20px;
+
+  @media (max-width: 992px) {
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer {
+  width: 100%;
+  & > a > button {
+    width: 100% !important;
+  }
+}
+
+.title {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -1.6px;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+}
+
+.desc {
+  color: var(--Gray, var(--Gray, #8c8c8c));
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.4px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blockTitle {
+  color: var(--Black, #262626);
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.modal {
+  max-width: 730px !important;
+  gap: 40px !important;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.tag {
+  border-radius: 100px;
+  background: var(--Color, #fff);
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Gray, var(--Gray, #8c8c8c));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+.label {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+
+  letter-spacing: -0.6px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 40px;
+
+    & > button {
+      width: 100%;
+    }
+  }
+}
+
+.checkBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.policy {
+  color: var(--input);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.policyBlue {
+  color: #5348d1;
+  cursor: pointer;
+}
+
+.elCheck {
+  width: 20px;
+  height: 20px;
+}

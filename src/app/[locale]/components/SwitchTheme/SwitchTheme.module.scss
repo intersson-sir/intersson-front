@@ -1,0 +1,80 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.item {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  cursor: not-allowed;
+}
+
+.iconDark {
+  width: 16px;
+  height: 16px;
+  background: #0d0d0d;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.iconLight {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.disabled {
+  color: #8c8c8c;
+}
+
+.switchInner {
+  height: 30px;
+  width: 56px;
+  border-radius: 30px;
+  background-color: var(--themeInner);
+  padding: 2px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.switchCircle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--themeCircle);
+  position: absolute;
+  transform: translateX(0);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switchOnRight {
+  transform: translateX(106%);
+}
+
+.sun {
+  display: block;
+}
+
+.moon {
+  display: none;
+}
+
+html[data-theme='dark'] .sun {
+  display: none;
+}
+
+html[data-theme='dark'] .moon {
+  display: block;
+}

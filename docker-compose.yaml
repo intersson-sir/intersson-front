@@ -1,0 +1,13 @@
+version: '2.2'
+
+services:
+  soft-front:
+    build:
+      context: .
+    ports:
+      - '3001:3000'
+  soft-front-prod:
+    build:
+      context: .
+    ports:
+      - '3002:3000'

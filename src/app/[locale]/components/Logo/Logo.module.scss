@@ -1,0 +1,50 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoImg {
+  width: 27px;
+  height: 27px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.logoImgMobile {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.logoTitle {
+  width: 158px;
+  height: 27px;
+  color: #fff;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.logoTitleMobile {
+  display: none;
+  color: #fff;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+html[data-theme='light'] .logoTitle,
+html[data-theme='light'] .logoTitleMobile {
+  color: #262626;
+  
+  & > svg > path {
+    fill: #262626;
+  }
+}

@@ -1,0 +1,174 @@
+.wrap {
+  position: relative;
+  background-color: var(--modal);
+  padding: 40px;
+  max-width: 770px;
+  width: 100%;
+  z-index: 2;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+
+  @media (max-width: 992px) {
+    max-width: 728px;
+    margin: 0 30px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 500px) {
+    height: 100dvh;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -1.6px;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+}
+
+.desc {
+  color: var(--text);
+
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.4px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.socialBtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--button);
+  color: var(--buttonText);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.22px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    width: 31px;
+    height: 31px;
+    border-radius: 6px;
+  }
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  & > span {
+    color: var(--Red, var(--Red, #d21722));
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+    white-space: break-spaces;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 40px;
+
+    & > button {
+      width: 100%;
+    }
+  }
+}
+
+.checkBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.policy {
+  color: var(--input);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.policyBlue {
+  color: #5348d1;
+  cursor: pointer;
+}
+
+.elCheck {
+  width: 20px;
+  height: 20px;
+}
+
+.mobileArrow {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 33px */
+  letter-spacing: -1.2px;
+  display: none;
+  left: 20px;
+  top: 40px;
+  cursor: pointer;
+
+  @media (max-width: 500px) {
+    display: block;
+  }
+}

@@ -1,0 +1,23 @@
+.wrap {
+  position: absolute;
+  bottom: 0;
+  left: 18px;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  -webkit-filter: grayscale(100);
+}
+
+.title {
+  color: rgba(38, 38, 38, 0.8);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+  letter-spacing: -0.4px;
+  max-width: 380px;
+}

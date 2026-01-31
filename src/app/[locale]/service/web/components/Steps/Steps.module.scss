@@ -1,0 +1,171 @@
+.inner {
+  background: var(
+    --Gradient,
+    linear-gradient(
+      91deg,
+      #4c69d8 -9.42%,
+      #3388d0 33.32%,
+      #c4c1a9 54.62%,
+      #ebbc88 76%,
+      #ca8286 96.95%,
+      #5348d1 119.26%
+    )
+  );
+}
+
+.wrap {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  @media (max-width: 992px) {
+    padding: 90px 0;
+    gap: 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 0;
+    gap: 40px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  color: var(--White, var(--Color, #fff));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+  text-transform: lowercase;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+
+.subTitle {
+  color: var(--White, var(--Color, #fff));
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -3.2px;
+
+  @media (max-width: 992px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  @media (max-width: 1230px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.card {
+  background: var(--White, #fff);
+  padding: 18px;
+  height: 305px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    height: 260px;
+  }
+
+  @media (max-width: 500px) {
+    height: auto;
+    gap: 20px;
+  }
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cardTitle {
+  color: #262626;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardGreyText {
+  color: var(--Gray, #8c8c8c);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+}
+
+.cardBlueText {
+  color: var(--Violet, #5348d1);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+}
+
+.cardFooter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  color: var(--Gray, #8c8c8c);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  letter-spacing: -0.24px;
+  padding: 4px 12px;
+  border-radius: 100px;
+  background: var(--Gray-2, #f3f3f3);
+}

@@ -1,0 +1,80 @@
+.task {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.taskLabel {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.label {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+
+  letter-spacing: -0.6px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.btn {
+  color: var(--text);
+  text-align: right;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+  transition: all 0.2s ease-in-out;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.openBtn {
+  transform: rotate(45deg);
+}
+
+.desc {
+  color: var(--text);
+  text-align: left;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+  white-space: break-spaces;
+
+  & > * {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+    unicode-bidi: isolate;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}

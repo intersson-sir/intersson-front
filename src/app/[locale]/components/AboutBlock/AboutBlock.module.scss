@@ -1,0 +1,257 @@
+.wrap {
+  padding-top: 262px;
+  padding-bottom: 194px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 992px) {
+    padding-top: 108px;
+    padding-bottom: 100px;
+
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 90px;
+
+    gap: 20px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-top: 24px;
+  max-width: 630px;
+
+  @media (max-width: 1200px) {
+    max-width: 430px;
+  }
+
+  @media (max-width: 992px) {
+    gap: 20px;
+    padding-top: 0;
+    max-width: 100%;
+  }
+}
+
+.infoWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  color: var(--Violet, var(--Violet, #5348d1));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+  text-transform: lowercase;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+
+.subTitle {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -1.6px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.desc {
+  color: var(--Gray, var(--Gray, #8c8c8c));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: -0.64px;
+  max-width: 384px;
+  margin-bottom: 254px;
+
+  @media (max-width: 992px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  justify-content: space-between;
+  position: relative;
+  height: 625px;
+  width: 100%;
+
+  & > div:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  & > div:nth-child(2) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  & > div:nth-child(3) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  @media (max-width: 992px) {
+    height: 100%;
+    & > div:nth-child(1) {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+    & > div:nth-child(2) {
+      position: relative;
+      left: 0;
+      bottom: 0;
+    }
+    & > div:nth-child(3) {
+      position: relative;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 550px;
+    & > div:nth-child(1) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+    & > div:nth-child(2) {
+      position: absolute;
+      top: 70%;
+    }
+    & > div:nth-child(3) {
+      position: absolute;
+      right: 0;
+      top: 35%;
+    }
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blockTitle {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -4.4px;
+
+  @media (max-width: 768px) {
+    font-size: 70px;
+  }
+}
+
+.blockDesc {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+
+.video {
+  border-radius: 28.5px;
+  width: 195px;
+  height: 57px;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    width: 125px;
+    height: 37px;
+  }
+}
+
+.imgList {
+  position: relative;
+
+  & > img:nth-child(2) {
+    position: absolute;
+    left: 12%;
+  }
+
+  & > img:nth-child(3) {
+    position: absolute;
+    left: 27%;
+  }
+
+  & > img:nth-child(4) {
+    position: absolute;
+    left: 70%;
+  }
+}
+
+.projectList {
+  position: relative;
+
+  & > img:nth-child(1) {
+    position: relative;
+    @media (max-width: 768px) {
+      left: -30%;
+    }
+  }
+
+  & > img:nth-child(2) {
+    position: absolute;
+    left: 20%;
+    @media (max-width: 768px) {
+      width: 50px;
+      height: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0%;
+    }
+  }
+
+  & > img:nth-child(3) {
+    position: absolute;
+    left: 60%;
+
+    @media (max-width: 768px) {
+      left: 60%;
+    }
+  }
+}

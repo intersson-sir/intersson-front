@@ -1,0 +1,152 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: transparent;
+  width: 100%;
+  min-height: 52px;
+  height: 52px;
+  color: var(--input);
+  background: var(--inputBg);
+  position: relative;
+  border-radius: 8px;
+
+  & > input::placeholder {
+    // color: var(--input);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
+  }
+
+  & .rt-TextFieldChrome {
+    border-radius: inherit;
+    border-color: #fff;
+  }
+
+  & > * {
+    box-shadow: unset;
+  }
+}
+.label {
+  color: var(--Gray-02, #9b9b9c);
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80%;
+  letter-spacing: -0.4px;
+  position: absolute;
+  z-index: 2;
+  left: 16px;
+  top: 6px;
+}
+
+.el {
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  border-radius: inherit;
+  border: 1px solid transparent;
+  color: var(--input);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  min-width: 0;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  &.formWidth {
+    width: 400px;
+  }
+
+  &.withLeftSpot {
+    padding: 8px 38px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.leftSlot {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  left: 16px;
+
+  & img {
+    object-fit: contain;
+  }
+}
+
+.rightSlot {
+  & img {
+    object-fit: contain;
+  }
+}
+
+.errorMessage {
+  color: var(--Red, var(--Red, #d21722));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  height: 15px;
+}
+
+.error {
+  border: 1px solid var(--Red, #d21722);
+  background: rgba(210, 23, 34, 0.04);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-1px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(1px);
+  }
+}
+
+.inputWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}

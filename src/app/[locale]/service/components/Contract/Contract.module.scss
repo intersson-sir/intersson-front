@@ -1,0 +1,276 @@
+.inner {
+  background: var(--background2);
+}
+
+.wrap {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 82px;
+
+  @media (max-width: 700px) {
+    padding: 85px 0;
+    gap: 35px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (max-width: 700px) {
+    gap: 20px;
+  }
+}
+
+.title {
+  color: var(--Violet, #5348d1);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+  text-transform: lowercase;
+
+  @media (max-width: 700px) {
+    font-size: 10px;
+  }
+}
+
+.subTitle {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -3.2px;
+
+  @media (max-width: 992px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 30px;
+  }
+}
+
+.list {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 406px;
+  gap: 16px;
+
+  @media (max-width: 1200px) {
+    height: 360px;
+  }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+}
+
+.block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+}
+
+.content {
+  position: relative;
+  width: 200px;
+  height: 20px;
+  border-radius: 4px;
+  background: var(
+    --Gradient,
+    linear-gradient(
+      91deg,
+      #4c69d8 -9.42%,
+      #3388d0 33.32%,
+      #c4c1a9 54.62%,
+      #ebbc88 76%,
+      #ca8286 96.95%,
+      #5348d1 119.26%
+    )
+  );
+
+  @media (max-width: 1200px) {
+    width: 140px;
+  }
+
+  @media (max-width: 992px) {
+    height: 10px;
+  }
+
+  @media (max-width: 800px) {
+    width: 110px;
+  }
+
+  @media (max-width: 700px) {
+    width: 100%;
+    height: 100%;
+    top: auto !important;
+  }
+}
+
+.contentInner {
+  position: absolute;
+  background: var(--background3);
+  padding: 18px;
+  width: 200px;
+  border-radius: 4px;
+  top: 4px;
+
+  & > span {
+    color: var(--text);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+
+    @media (max-width: 992px) {
+      font-size: 8px;
+      display: block;
+      line-height: 200%;
+    }
+
+    @media (max-width: 700px) {
+      font-size: 14px;
+      position: relative;
+    }
+
+    @media (max-width: 500px) {
+      width: 100%;
+      height: 100px;
+      position: relative;
+      display: contents;
+      line-height: 140%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    width: 140px;
+  }
+
+  @media (max-width: 992px) {
+    padding: 10px;
+  }
+
+  @media (max-width: 800px) {
+    width: 110px;
+  }
+
+  @media (max-width: 700px) {
+    width: 100%;
+    height: 100px;
+    position: relative;
+  }
+
+  @media (max-width: 500px) {
+    min-height: 76px;
+    padding: 18px;
+    height: auto;
+  }
+}
+
+.stepTitle {
+  color: var(--Gray, var(--Gray, #8c8c8c));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+  text-transform: lowercase;
+
+  @media (max-width: 992px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+
+.line {
+  position: absolute;
+  background-color: #8c8c8c;
+  width: 1px;
+  height: 350px;
+  left: 10px;
+  top: 30px;
+
+  @media (max-width: 1200px) {
+    height: 300px;
+  }
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+
+.lineBlue {
+  position: absolute;
+  width: 1px;
+  height: 350px;
+  left: 10px;
+  top: 30px;
+
+  @media (max-width: 1200px) {
+    height: 300px;
+  }
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+
+.mobileLine {
+  display: none;
+  position: absolute;
+  right: 18px;
+  top: -30px;
+
+  @media (max-width: 700px) {
+    display: block;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  margin-top: 18px;
+}
+
+.footerText {
+  color: var(--Violet, #5348d1);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.24px;
+
+  @media (max-width: 992px) {
+    font-size: 8px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 12px;
+  }
+}

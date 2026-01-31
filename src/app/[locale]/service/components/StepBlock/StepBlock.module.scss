@@ -1,0 +1,138 @@
+.container {
+  @media (max-width: 992px) {
+    padding-right: 0;
+  }
+}
+
+.wrap {
+  margin-top: 120px;
+  display: grid;
+  gap: 105px;
+  grid-template:
+    'info comment'
+    'card card';
+
+  @media (max-width: 992px) {
+    gap: 40px;
+    grid-template:
+      'info'
+      'card'
+      'comment';
+  }
+
+  @media (max-width: 768px) {
+    gap: 60px;
+  }
+}
+
+.info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (max-width: 992px) {
+    gap: 20px;
+  }
+}
+
+.title {
+  color: var(--Violet, #5348d1);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+  text-transform: lowercase;
+
+  @media (max-width: 992px) {
+    font-size: 10px;
+  }
+}
+
+.subTitle {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -3.2px;
+  white-space: break-spaces;
+
+  @media (max-width: 992px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.comment {
+  grid-area: comment;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 318px;
+  margin-top: 80px;
+
+  @media (max-width: 992px) {
+    max-width: 280px;
+    margin-top: 0px;
+    justify-self: flex-start;
+  }
+}
+
+.commentDesc {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: -0.64px;
+}
+
+.manager {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.managerWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.managerName {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.8px;
+
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+}
+
+.managerDesc {
+  color: var(--greyText-2);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: -0.56px;
+}
+
+.swiper {
+  grid-area: card;
+  min-width: 0;
+}

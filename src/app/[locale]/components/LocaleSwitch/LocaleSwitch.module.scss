@@ -1,0 +1,41 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.item {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  cursor: not-allowed;
+}
+
+.disabled {
+  color: #8c8c8c;
+  cursor: pointer;
+}
+
+.slash {
+  color: #8c8c8c;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.icon {
+  cursor: not-allowed;
+}
+
+.disabledIcon {
+  opacity: 0.4;
+  cursor: pointer;
+}

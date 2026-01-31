@@ -1,0 +1,105 @@
+.wrap {
+  padding-top: 60px;
+
+  @media (max-width: 768px) {
+    padding-top: 42px;
+  }
+
+  & > div {
+    overflow-y: hidden;
+  }
+}
+
+.block {
+  margin-left: 70px;
+
+  @media (max-width: 768px) {
+    margin-left: 26px;
+  }
+}
+
+.drop {
+  width: 75px;
+  height: 55px;
+
+  @media (max-width: 768px) {
+    width: 55px;
+    height: 40px;
+  }
+
+  & > svg > path,
+  & > svg > rect {
+    fill: #fff;
+  }
+}
+
+.ruking {
+  width: 151px;
+  height: 40px;
+
+  @media (max-width: 768px) {
+    width: 109px;
+    height: 28px;
+  }
+
+  & > svg > path,
+  & > svg > rect {
+    fill: #fff;
+  }
+}
+
+.everypet {
+  width: 163px;
+  height: 34px;
+
+  @media (max-width: 768px) {
+    width: 118px;
+    height: 24px;
+  }
+
+  & > svg > path,
+  & > svg > g > rect {
+    fill: #fff;
+  }
+}
+
+.merlines {
+  width: 164px;
+  height: 38px;
+
+  @media (max-width: 768px) {
+    width: 118px;
+    height: 27px;
+  }
+
+  & > svg > path,
+  & > svg > rect {
+    fill: #fff;
+  }
+}
+
+.rabbit {
+  width: 66px;
+  height: 64px;
+
+  @media (max-width: 768px) {
+    width: 46px;
+    height: 46px;
+  }
+
+  & > svg > path,
+  & > svg > rect {
+    fill: #fff;
+  }
+}
+
+html[data-theme='light'] .drop,
+html[data-theme='light'] .ruking,
+html[data-theme='light'] .everypet,
+html[data-theme='light'] .merlines,
+html[data-theme='light'] .rabbit {
+  & > svg > path,
+  & > svg > g > rect {
+    fill: #262626;
+  }
+}

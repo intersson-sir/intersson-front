@@ -1,0 +1,267 @@
+.wrap {
+  min-height: 100vh;
+  position: relative;
+  background: var(--background);
+
+  html[data-theme='dark'] & {
+    background: #000;
+  }
+}
+
+.iridescenceBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.footer {
+  position: relative;
+  z-index: 10;
+  background: transparent;
+}
+
+// Hero Section
+.hero {
+  padding: 194px 0 120px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 992px) {
+    padding: 140px 0 80px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 120px 0 60px;
+  }
+}
+
+.heroTitle {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -3.2px;
+  margin: 0 0 24px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 992px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+    letter-spacing: -1.6px;
+  }
+}
+
+.heroSubtitle {
+  color: var(--greyText-2);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+// Benefits Section
+.benefitsSection {
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+}
+
+.sectionTitle {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -1.92px;
+  margin: 0 0 60px;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.benefitCard {
+  padding: 32px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+
+  html[data-theme='light'] & {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    html[data-theme='light'] & {
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 24px;
+  }
+}
+
+.benefitTitle {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 130%;
+  margin: 0 0 12px;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.benefitDesc {
+  color: var(--greyText-2);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+// Industries Section
+.industriesSection {
+  padding: 80px 0;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+
+  html[data-theme='dark'] & {
+    background: #000;
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+}
+
+.industriesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+.industryCard {
+  padding: 24px 20px;
+  border-radius: 16px;
+  background: var(--buttonText);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--button);
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 16px;
+  }
+}
+
+.industryName {
+  color: var(--text);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+// Pricing Section
+.pricingSection {
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
