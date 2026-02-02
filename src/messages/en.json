@@ -431,6 +431,18 @@
       "igor": "Igor Tarakin"
     }
   },
+  "ReviewForm": {
+    "title": "Thank you for working with us!",
+    "desc": "We are very interested in hearing your opinion about working with us.",
+    "name": "Name",
+    "company": "Company",
+    "position": "Position",
+    "logo": "📎 Attach logo",
+    "review": "Review",
+    "submit": "→ Submit",
+    "error": "It looks like you made a mistake somewhere,\nplease fill out the form correctly",
+    "required": "Required field"
+  },
   "Form": {
     "title": "Hello! we are very interested in learning more about your project.",
     "desc": "Submit a request or write to us",

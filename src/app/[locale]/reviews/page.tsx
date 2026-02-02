@@ -1,12 +1,17 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { useState } from 'react'
+
+import ModalSlide from '@/ui/ModalSlide'
 
 import ReviewCard from './components/ReviewCard'
+import ReviewForm from './components/ReviewForm'
 import S from './Reviews.module.scss'
 
 const ReviewsPage = () => {
   const t = useTranslations('Reviews')
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const reviews = [
     {
@@ -54,8 +59,7 @@ const ReviewsPage = () => {
   ]
 
   const handleLeaveReview = () => {
-    // Redirect to form or open modal
-    window.location.href = '/form'
+    setIsModalOpen(true)
   }
 
   return (
@@ -78,6 +82,10 @@ const ReviewsPage = () => {
           </button>
         </div>
       </div>
+
+      <ModalSlide open={isModalOpen} toggleOpen={setIsModalOpen} scrollable>
+        <ReviewForm />
+      </ModalSlide>
     </div>
   )
 }

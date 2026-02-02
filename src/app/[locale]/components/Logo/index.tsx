@@ -1,6 +1,10 @@
-import Image from 'next/image'
+'use client'
+
+import { useTheme } from 'next-themes'
+import { useEffect, useState } from 'react'
 import { useLocale } from 'next-intl'
-import LogoTitle from 'public/icons/logo_title.svg'
+import LogoDark from 'public/icons/logo-dark.svg'
+import LogoLight from 'public/icons/logo-light.svg'
 
 import { localeType } from '@/configs/config'
 import { Link } from '@/navigation'
@@ -9,20 +13,22 @@ import S from './Logo.module.scss'
 
 const Logo = () => {
   const locale = useLocale() as localeType
+  const { theme, resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const isDark = mounted && (theme === 'dark' || resolvedTheme === 'dark')
+
   return (
     <Link className={S.logo} href={'/'} locale={locale}>
-      <div className={S.logoImg}>
-        <Image src={'/images/logo.png'} width={27} height={27} alt="logo" />
-      </div>
-      <div className={S.logoImgMobile}>
-        <Image src={'/images/logo.png'} width={16} height={16} alt="logo" />
-      </div>
-      <div className={S.logoTitle}>
-        <LogoTitle width={158} height={27} />
-      </div>
-      <div className={S.logoTitleMobile}>
-        <LogoTitle width={85} height={16} />
-      </div>
+      {isDark ? (
+        <LogoDark className={S.logoMain} />
+      ) : (
+        <LogoLight className={S.logoMain} />
+      )}
     </Link>
   )
 }
