@@ -1,8 +1,6 @@
 import { useTranslations } from 'next-intl'
 
 import Methods from '../components/Methods'
-import MobileProjects from '../components/MobileProjects'
-import Prices from '../components/Prices'
 import Tasks from '../components/Tasks'
 import MainBlock from './components/MainBlock'
 import Steps from './components/Steps'
@@ -97,8 +95,6 @@ const MobilePage = ({ params }: PageProps) => {
       <MainBlock />
       <Steps />
       <Methods data={METHODS_DATA} />
-      <MobileProjects />
-      <Prices data={PRICES_DATA} locale={params.locale} />
       <Tasks data={TASKS_DATA} />
     </section>
   )

@@ -1,8 +1,6 @@
 import { useTranslations } from 'next-intl'
 
 import Methods from '../components/Methods'
-import Prices from '../components/Prices'
-import Projects from '../components/Projects'
 import Tasks from '../components/Tasks'
 import MainBlock from './components/MainBlock'
 import Steps from './components/Steps'
@@ -98,8 +96,6 @@ const WebPage = ({ params }: PageProps) => {
       <MainBlock />
       <Steps />
       <Methods data={METHODS_DATA} />
-      <Projects />
-      <Prices data={PRICES_DATA} locale={params.locale} />
       <Tasks data={TASKS_DATA} />
     </section>
   )

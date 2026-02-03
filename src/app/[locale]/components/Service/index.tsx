@@ -26,13 +26,6 @@ const Service = () => {
               <CommentIcon width={20} height={20} />
               <span className={S.commentDesc}>{t('comment')}</span>
               <div className={S.manager}>
-                <Image
-                  src={'/images/peoples/4.png'}
-                  width={45}
-                  height={45}
-                  alt="manager"
-                  style={{ borderRadius: '50%' }}
-                />
                 <div className={S.managerWrap}>
                   <span className={S.managerName}>{t('igor')}</span>
                   <span className={S.managerDesc}>{t('manager')}</span>

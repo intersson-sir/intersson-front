@@ -32,7 +32,12 @@ const Projects = () => {
               </div>
             </div>
             <div className={S.dropImg}>
-              <Image src={'/images/8bit.png'} fill alt="8bit" />
+              <Image 
+                src={'/images/fazaicon.png'} 
+                fill 
+                alt="Faza Watches" 
+                style={{ borderRadius: '50%' }}
+              />
             </div>
           </div>
         </div>
@@ -52,7 +57,7 @@ const Projects = () => {
           <div className={S.blockWrap}>
             <EveryPet />
             <div className={S.blockInfo}>
-              <span className={S.blockTitle}>Everypet</span>
+              <span className={S.blockTitle}>Real Estate</span>
               <div className={S.tags}>
                 <span className={S.tag}>React.js</span>
                 <span className={S.tag}>Next.js</span>
@@ -66,7 +71,7 @@ const Projects = () => {
           <div className={S.blockWrap}>
             <Ruking />
             <div className={S.blockInfo}>
-              <span className={S.blockTitle}>RuKing</span>
+              <span className={S.blockTitle}>YSV Brand</span>
               <div className={S.tags}>
                 <span className={S.tag}>React.js</span>
                 <span className={S.tag}>Next.js</span>
@@ -75,9 +80,6 @@ const Projects = () => {
               </div>
               <span className={S.blockDesc}>{t('rukingDesc')}</span>
             </div>
-          </div>
-          <div className={S.dropImg}>
-            <Image src={'/images/ruking.png'} fill alt="8bit" />
           </div>
         </div>
       </div>

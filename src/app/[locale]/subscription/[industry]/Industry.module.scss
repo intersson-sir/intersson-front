@@ -1,0 +1,133 @@
+.wrap {
+  min-height: 100vh;
+  padding-top: 100px;
+  position: relative;
+  background: var(--background);
+  color: var(--text);
+}
+
+.templatesSection {
+  padding: 40px 0 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 48px;
+  font-family: Inter;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: var(--text);
+  
+  @media (max-width: 768px) {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+.templatesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.templateCard {
+  background: var(--card);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  
+  html[data-theme='dark'] & {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    
+    html[data-theme='dark'] & {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+.templateImage {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  
+  img {
+    transition: transform 0.3s ease;
+  }
+  
+  .templateCard:hover & img {
+    transform: scale(1.05);
+  }
+}
+
+.templateContent {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.templateName {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text);
+  margin: 0;
+  
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.downloadBtn {
+  display: inline-block;
+  padding: 14px 24px;
+  background: var(--button);
+  color: var(--buttonText);
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  
+  &:hover {
+    background: #a594fd;
+    color: #fff;
+  }
+}
+
+.backBtn {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: var(--greyText-2);
+  font-size: 16px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  
+  &:hover {
+    color: var(--text);
+  }
+}
+
+.footer {
+  position: relative;
+  z-index: 10;
+  background: transparent;
+}

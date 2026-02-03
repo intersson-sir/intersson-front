@@ -9,7 +9,7 @@ const Ruking = () => {
   return (
     <video
       onClick={() => setIsRuKingOpen(true)}
-      src="/videos/ruking.mp4"
+      src="/videos/ysv.mp4"
       className={S.dropVideo}
       muted
       playsInline

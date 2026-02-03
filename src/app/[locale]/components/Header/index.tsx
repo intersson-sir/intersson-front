@@ -21,10 +21,6 @@ const Header = () => {
 
   const LINKS: NavLink[] = [
     {
-      title: t('about'),
-      link: URLS.ABOUT
-    },
-    {
       title: t('prices'),
       link: URLS.SERVICE
     },

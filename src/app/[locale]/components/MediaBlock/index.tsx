@@ -1,14 +1,20 @@
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
+import URLS from '@/configs/urls'
 import S from './MediaBlock.module.scss'
 
-const MediaBlock = () => {
+interface MediaBlockProps {
+  title?: string
+}
+
+const MediaBlock = ({ title }: MediaBlockProps) => {
   const t = useTranslations('Pricing')
 
   return (
     <div className={S.wrap}>
       <div className={S.header}>
-        <h2 className={S.mainTitle}>{t('title')}</h2>
+        <h2 className={S.mainTitle}>{title || t('title')}</h2>
         <div className={S.badge}>{t('soon')}</div>
         <p className={S.subtitle}>{t('subtitle')}</p>
       </div>
@@ -32,7 +38,7 @@ const MediaBlock = () => {
             <li><span className={S.checkmark}>✓</span> {t('starter.feature6')}</li>
             <li><span className={S.checkmark}>✓</span> {t('starter.feature7')}</li>
           </ul>
-          <button className={S.button}>{t('getStarted')}</button>
+          <Link href={URLS.WORK} className={S.button}>{t('getStarted')}</Link>
         </div>
 
         {/* Professional Plan */}
@@ -56,7 +62,7 @@ const MediaBlock = () => {
             <li><span className={S.checkmark}>✓</span> {t('professional.feature8')}</li>
             <li><span className={S.checkmark}>✓</span> {t('professional.feature9')}</li>
           </ul>
-          <button className={`${S.button} ${S.buttonPrimary}`}>{t('getStarted')}</button>
+          <Link href={URLS.WORK} className={`${S.button} ${S.buttonPrimary}`}>{t('getStarted')}</Link>
         </div>
 
         {/* Enterprise Plan */}
@@ -81,7 +87,7 @@ const MediaBlock = () => {
             <li><span className={S.checkmark}>✓</span> {t('enterprise.feature10')}</li>
             <li><span className={S.checkmark}>✓</span> {t('enterprise.feature11')}</li>
           </ul>
-          <button className={S.button}>{t('getStarted')}</button>
+          <Link href={URLS.WORK} className={S.button}>{t('getStarted')}</Link>
         </div>
       </div>
     </div>

@@ -184,6 +184,13 @@
   line-height: normal;
   letter-spacing: -0.4px;
   white-space: nowrap;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: #a594fd;
+    color: #fff;
+  }
 
   @media (max-width: 500px) {
     font-size: 12px;
@@ -194,4 +201,10 @@
   width: 100%;
   object-fit: cover;
   height: 460px;
+
+  @media (max-width: 500px) {
+    height: 260px;
+    object-fit: contain;
+    background: #000;
+  }
 }

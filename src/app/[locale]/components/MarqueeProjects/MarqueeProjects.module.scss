@@ -93,11 +93,111 @@
   }
 }
 
+.jwMarriott {
+  width: 140px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    width: 100px;
+    height: 60px;
+  }
+
+  & > svg > path,
+  & > svg > rect {
+    fill: #fff;
+  }
+}
+
+.fazaWatches {
+  width: 140px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    width: 100px;
+    height: 60px;
+  }
+
+  & > svg > path,
+  & > svg > rect {
+    fill: #fff;
+  }
+}
+
+.neom {
+  width: 140px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    width: 100px;
+    height: 60px;
+  }
+
+  & > svg > path,
+  & > svg > rect {
+    fill: #fff;
+  }
+}
+
+.photo2024 {
+  width: 100px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    width: 70px;
+    height: 46px;
+  }
+
+  & > svg > path,
+  & > svg > rect {
+    fill: #fff;
+  }
+}
+
 html[data-theme='light'] .drop,
 html[data-theme='light'] .ruking,
 html[data-theme='light'] .everypet,
 html[data-theme='light'] .merlines,
-html[data-theme='light'] .rabbit {
+html[data-theme='light'] .rabbit,
+html[data-theme='light'] .neom,
+html[data-theme='light'] .photo2024,
+html[data-theme='light'] .jwMarriott,
+html[data-theme='light'] .fazaWatches {
   & > svg > path,
   & > svg > g > rect {
     fill: #262626;

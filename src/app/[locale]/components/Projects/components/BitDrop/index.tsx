@@ -11,7 +11,7 @@ const BitDrop = () => {
       <video
         playsInline
         onClick={() => setIs8BitDropOpen(true)}
-        src="/videos/8bit.mp4"
+        src="/videos/faza.mp4"
         className={S.dropVideo}
         muted
         autoPlay

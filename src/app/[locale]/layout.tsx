@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Soft Premier</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icons/faviconintersson.png" />
 
         <meta name="description" content="Soft Premier" />
         <meta name="keywords" content="Soft Premier" />

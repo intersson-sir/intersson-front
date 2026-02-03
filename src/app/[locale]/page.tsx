@@ -7,8 +7,10 @@ import MediaBlock from './components/MediaBlock'
 import Projects from './components/Projects'
 import ReturnBlock from './components/ReturnBlock'
 import Service from './components/Service'
+import { useTranslations } from 'next-intl'
 
 const MainPage: NextPage = () => {
+  const t = useTranslations('Pricing')
   return (
     <section>
       <HeroSection />
@@ -17,7 +19,7 @@ const MainPage: NextPage = () => {
       <Projects />
       <ReturnBlock />
       <Service />
-      <MediaBlock />
+      <MediaBlock title={t('websiteSubscription')} />
     </section>
   )
 }

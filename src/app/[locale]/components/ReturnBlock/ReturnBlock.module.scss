@@ -1,29 +1,7 @@
 .inner {
-  background: 
-    radial-gradient(
-      ellipse 800px 800px at 50% 50%,
-      rgba(159, 180, 240, 0.3) 0%,
-      rgba(122, 183, 239, 0.25) 15%,
-      rgba(118, 150, 238, 0.2) 25%,
-      rgba(70, 128, 207, 0.18) 35%,
-      rgba(46, 116, 191, 0.15) 45%,
-      rgba(22, 105, 176, 0.12) 55%,
-      rgba(36, 80, 157, 0.1) 65%,
-      rgba(50, 56, 138, 0.08) 75%,
-      transparent 100%
-    ),
-    linear-gradient(135deg, 
-      #1a0a2b 0%, 
-      #2b083e 15%, 
-      #43083e 25%,
-      #4e0664 40%, 
-      #471269 50%,
-      #401f77 60%,
-      #32388a 70%,
-      #16699d 80%,
-      #2e74bf 90%,
-      #4680cf 100%
-    );
+  background: url('/images/backgroun.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .wrap {

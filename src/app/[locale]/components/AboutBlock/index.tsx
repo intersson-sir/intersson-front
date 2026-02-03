@@ -20,7 +20,7 @@ const AboutBlock = () => {
             <span className={S.blockTitle}>120+</span>
             <video
               playsInline
-              src="/videos/projects.mp4"
+              src="/videos/Logo-4-remix 2.mp4"
               autoPlay
               muted
               loop

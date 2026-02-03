@@ -56,6 +56,9 @@ const Footer = ({ forceShow = false }: { forceShow?: boolean }) => {
                 <div className={S.header}>
                   <Logo />
                   <div className={S.buttons}>
+                    <Link href={URLS.WHATSAPP} className={S.socialBtn}>
+                      WA
+                    </Link>
                     <Link href={URLS.TELEGRAM} className={S.socialBtn}>
                       TG
                     </Link>
@@ -81,17 +84,12 @@ const Footer = ({ forceShow = false }: { forceShow?: boolean }) => {
                   </div>
 
                   <div className={S.links}>
-                    <span className={S.text}>+7 916 995 73 68</span>
+                    <span className={S.text}>+39 370 102 24 25</span>
                     <button onClick={goToSendMail} className={S.mailBtn}>
-                      <span className={S.text}>info@softpremier.io</span>
+                      <span className={S.text}>info@intersson.com</span>
                     </button>
-                    <span className={S.text}>{t('addressMsk')}</span>
-                    <span className={S.text}>
-                      One Central 8th and 9th Floor, Trade Centre, Trade Centre
-                      2, Dubai - United Arab Emirates
-                    </span>
                   </div>
-                  <span className={S.text}>© 2019 – 2025</span>
+                  <span className={S.text}>© 2018 – 2026</span>
                   <div className={S.descWrap}>
                     <Link href={URLS.POLICY} className={S.text}>
                       {t('policy')}
@@ -99,11 +97,6 @@ const Footer = ({ forceShow = false }: { forceShow?: boolean }) => {
                     {/* <Link href={URLS.POLICY} className={S.text}>
                       {t('usePolicy')}
                     </Link> */}
-                  </div>
-                  <span className={S.text}>ООО «Софт Премьер»</span>
-                  <div className={S.descWrapAbout}>
-                    <span className={S.text}>ИНН 5024238266</span>
-                    <span className={S.text}>ОГРН 1235000141782</span>
                   </div>
                 </div>
                 <div className={S.mobileList}>
@@ -130,18 +123,10 @@ const Footer = ({ forceShow = false }: { forceShow?: boolean }) => {
                     </Link> */}
                   </div>
 
-                  <span className={S.text}>+7 916 995 73 68</span>
+                  <span className={S.text}>+39 370 102 24 25</span>
                   <button onClick={goToSendMail} className={S.mailBtn}>
-                    <span className={S.text}>info@softpremier.io</span>
+                    <span className={S.text}>info@intersson.com</span>
                   </button>
-                  <span className={S.text}>{t('addressMsk')}</span>
-                  <span className={S.text}>
-                    One Central 8th and 9th Floor, Trade Centre, Trade Centre 2,
-                    Dubai - United Arab Emirates
-                  </span>
-                  <span className={S.text}>ИНН 5024238266</span>
-                  <span className={S.text}>ОГРН 1235000141782</span>
-                  <span className={S.text}>ООО «Софт Премьер»</span>
                 </div>
               </div>
             </div>

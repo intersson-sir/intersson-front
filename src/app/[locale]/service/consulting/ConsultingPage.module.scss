@@ -1,10 +1,20 @@
 .methods {
-  & > div > div > div:nth-child(3) {
+  margin-bottom: 120px;
+
+  & > div > div > div:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
     @media (max-width: 1200px) {
       display: flex;
     }
+  }
+
+  @media (max-width: 992px) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
   }
 }

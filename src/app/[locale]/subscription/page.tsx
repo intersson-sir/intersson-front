@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl'
 import { useTheme } from 'next-themes'
 import dynamic from 'next/dynamic'
+import { Link } from '@/navigation'
 import { useEffect, useState } from 'react'
 
 import S from './Subscription.module.scss'
@@ -23,6 +24,11 @@ const Iridescence = dynamic(() => import('./components/Iridescence'), {
 
 // Import Silk with no SSR
 const Silk = dynamic(() => import('./components/Silk'), {
+  ssr: false
+})
+
+// Import HeroBadge
+const HeroBadge = dynamic(() => import('./components/HeroBadge'), {
   ssr: false
 })
 
@@ -66,16 +72,16 @@ const SubscriptionPage = () => {
   ]
 
   const industries = [
-    'E-commerce',
-    'Healthcare',
-    'Real Estate',
-    'Education',
-    'Finance',
-    'Technology',
-    'Hospitality',
-    'Marketing',
-    'Legal Services',
-    'Food & Beverage'
+    { name: 'E-commerce', slug: 'e-commerce' },
+    { name: 'Healthcare', slug: 'healthcare' },
+    { name: 'Real Estate', slug: 'real-estate' },
+    { name: 'Education', slug: 'education' },
+    { name: 'Finance', slug: 'finance' },
+    { name: 'Technology', slug: 'technology' },
+    { name: 'Hospitality', slug: 'hospitality' },
+    { name: 'Marketing', slug: 'marketing' },
+    { name: 'Legal Services', slug: 'legal-services' },
+    { name: 'Food & Beverage', slug: 'food-beverage' }
   ]
 
   return (
@@ -94,6 +100,7 @@ const SubscriptionPage = () => {
       {/* Hero Section */}
       <section className={S.hero}>
         <div className="container">
+          {mounted && <HeroBadge text={t('heroBadge')} />}
           <h1 className={S.heroTitle}>{t('heroTitle')}</h1>
           <p className={S.heroSubtitle}>{t('heroSubtitle')}</p>
         </div>
@@ -120,9 +127,13 @@ const SubscriptionPage = () => {
           <h2 className={S.sectionTitle}>{t('industriesTitle')}</h2>
           <div className={S.industriesGrid}>
             {industries.map((industry, index) => (
-              <div key={index} className={S.industryCard}>
-                <span className={S.industryName}>{industry}</span>
-              </div>
+              <Link 
+                href={`/subscription/${industry.slug}`} 
+                key={index} 
+                className={S.industryCard}
+              >
+                <span className={S.industryName}>{industry.name}</span>
+              </Link>
             ))}
           </div>
         </div>

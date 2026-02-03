@@ -9,7 +9,7 @@ const EveryPet = () => {
   return (
     <video
       onClick={() => setIsEverypetOpen(true)}
-      src="/videos/everypet.mp4"
+      src="/videos/kite-export.mp4"
       className={S.dropVideoSquare}
       muted
       autoPlay

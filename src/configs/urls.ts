@@ -8,8 +8,9 @@ const URLS = {
   PROJECTS: '/reviews',
   CONTACTS: '/contacts',
 
-  TELEGRAM: 'https://t.me/softpremier',
-  MAIL: `mailto:info@softpremier.io?subject=${encodeURIComponent(
+  TELEGRAM: 'https://t.me/andreyandersson',
+  WHATSAPP: 'https://wa.me/393701022425',
+  MAIL: `mailto:info@intersson.com?subject=${encodeURIComponent(
     'Soft premier'
   )}&body=${encodeURIComponent('Soft premier')}`,
 

@@ -1,16 +1,7 @@
 .inner {
-  background: var(
-    --Gradient,
-    linear-gradient(
-      91deg,
-      #4c69d8 -9.42%,
-      #3388d0 33.32%,
-      #c4c1a9 54.62%,
-      #ebbc88 76%,
-      #ca8286 96.95%,
-      #5348d1 119.26%
-    )
-  );
+  background: url('/images/backgroun.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .wrap {

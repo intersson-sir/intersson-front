@@ -3,8 +3,8 @@
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import { useLocale } from 'next-intl'
-import LogoDark from 'public/icons/logo-dark.svg'
-import LogoLight from 'public/icons/logo-light.svg'
+import LogoDark from 'public/icons/logo-dark-new.svg'
+import LogoLight from 'public/icons/logo-light-new.svg'
 
 import { localeType } from '@/configs/config'
 import { Link } from '@/navigation'

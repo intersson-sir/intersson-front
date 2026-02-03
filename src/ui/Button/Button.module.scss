@@ -67,6 +67,12 @@
   &.primary {
     background: var(--button);
     color: var(--buttonText);
+
+    &:not(:disabled):hover {
+      background: #a594fd;
+      color: #fff;
+      opacity: 1;
+    }
   }
 
   &.secondary {

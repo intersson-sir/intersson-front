@@ -6,6 +6,16 @@ const withNextIntl = createNextIntlPlugin('./src/i18n.ts')
 const nextConfig = {
   output: 'standalone',
 
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        pathname: '/**',
+      },
+    ],
+  },
+
   webpack(config) {
     config.module.rules.push(
       {

@@ -32,13 +32,13 @@ const Projects = () => {
           <div className={S.blockWrap}>
             <EveryPet />
             <div className={S.blockInfo}>
-              <span className={S.blockTitle}>Everypet</span>
+              <span className={S.blockTitle}>Real Estate</span>
               <div className={S.tags}>
                 <span className={S.tag}>React.js</span>
                 <span className={S.tag}>Next.js</span>
                 <span className={S.tag}>+11</span>
               </div>
-              <span className={S.blockDesc}>{t('everypetDesc')}</span>
+              <span className={S.blockDesc}>{t('petDesc')}</span>
             </div>
           </div>
         </div>

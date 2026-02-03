@@ -60,6 +60,7 @@
     "soon": "SOON",
     "subtitle": "Start with monthly subscription, buy out anytime",
     "mostPopular": "Most Popular",
+    "websiteSubscription": "Website Through Subscription",
     "getStarted": "Get Started",
     "starter": {
       "title": "Starter",
@@ -119,6 +120,7 @@
     "review6": "Impressed by the level of technical expertise and the team's ability to scale solutions. Successfully handled a high-load system for our global product."
   },
   "Subscription": {
+    "heroBadge": "Launch Your Website in Days, Not Months",
     "heroTitle": "Professional Websites Through Subscription",
     "heroSubtitle": "Launch your business online without large upfront costs. Pay monthly and get the option to buy anytime.",
     "benefitsTitle": "Built for Entrepreneurs",
@@ -139,11 +141,11 @@
   "Projects": {
     "title": "Key projects",
     "desc": "From MVP development\nto growth and expansion",
-    "dropDesc": "We created the 8bitdrop platform from scratch, which combines mini-games, case openings, and esports betting. We designed the architecture, created a unique design and user-friendly interface, and implemented secure server functionality. We introduced a system of 'transparency' for results, ensuring user trust in the platform.",
+    "dropDesc": "We developed a website for FAZA Watches — a premium boutique selling luxury watches, jewelry, and accessories",
     "merlinesDesc": "We developed the Merlines service for searching available train, car, and airline tickets. We designed and implemented an architecture with a unique meta-search system.",
-    "petDesc": "We developed the server-side for a social network for pet owners. We implemented user data management, integration with external services, and ensured security.",
-    "everypetDesc": "The service for pet owners has become in demand due to the ability to share experience and knowledge about pets, participate in specialized communities and manage the care of their pets, including making appointments with specialists.",
-    "rukingDesc": "We created the design, architecture, and frontend for a hotel booking service. We implemented various metrics to track system efficiency, such as hotel occupancy rates, average booking duration, and cancellation rates.",
+    "petDesc": "We engineered a next-generation real estate platform with intelligent features.",
+    "everypetDesc": "We engineered a next-generation real estate platform with intelligent features.",
+    "rukingDesc": "We developed a digital platform for YSV — a brand of exclusive dresses focusing on aesthetics, visual presentation, and high fashion atmosphere. The website operates as a premium online showcase, conveying the brand's style and philosophy.",
     "8Bit": {
       "title": "8bitdrop",
       "subTitle": "Development of a gambling platform",
@@ -165,9 +167,9 @@
       "merlines": "System development"
     },
     "EveryPet": {
-      "title": "EveryPet",
+      "title": "Real Estate",
       "subTitle": "System development",
-      "desc": "Everypet is a social network for pet owners, where people can share information about their pets, browse thematic communities, monitor their pets and make appointments with specialists. The team was engaged in the development and linking of the server part of the project Everypet.",
+      "desc": "We engineered a next-generation real estate platform with intelligent features.",
       "result": "The service for pet owners has become in demand due to the ability to share experience and knowledge about pets, participate in specialized communities and manage the care of their pets, including making appointments with specialists.",
       "resultTag": "Result",
       "next": "Next",
@@ -177,7 +179,7 @@
     "Ruking": {
       "title": "RuKing",
       "subTitle": "System development",
-      "desc": "A metrics system with implemented metrics that track occupancy, average length of stay and cancellation frequency. This provides more efficient management and an improved user experience.",
+      "desc": "We developed a digital platform for YSV — a brand of exclusive dresses focusing on aesthetics, visual presentation, and high fashion atmosphere. The website operates as a premium online showcase, conveying the brand's style and philosophy.",
       "result": "The project is a hotel booking service with implemented metrics that track occupancy, average length of stay and cancellation frequency. This provides more efficient management and improved user experience.",
       "resultTag": "Result",
       "next": "Next",
@@ -207,8 +209,8 @@
   },
   "Service": {
     "title": "Services and solutions",
-    "comment": "We use flexible development methods, adapting to the client's desires and budget.",
-    "manager": "Project manager",
+    "comment": "Our reputation is built on results. Every project starts with one question: how will this make the product stronger?",
+    "manager": "founder of INTERSSON",
     "analyticsTitle": "Project analytics",
     "analyticsDesc": "We fully immerse ourselves in the product, researching the best cases in the market.",
     "machineTitle": "Machine learning",
@@ -221,28 +223,40 @@
     "web3Desc": "We design and develop innovative solutions based on blockchain and decentralized technologies.",
     "webTitle": "Web application development",
     "webDesc": "We create high-performance and scalable web applications.",
-    "igor": "Igor Tarakin"
+    "igor": "Andrey Andersson"
   },
   "AboutPage": {
     "Hero": {
-      "title": "Soft Premier provides a full range of IT services for the realization of large-scale digital projects"
+      "title": "Our story",
+      "subtitle": "\"Where Innovation meets Creativity\""
     },
-    "Clients": {
-      "title": "Since 2019, we have been trusted by major federal clients: developers, online stores, clinics, pharmaceutical companies, and EdTech companies."
+    "Story": {
+      "passion": "Our journey begins with the",
+      "passionHighlight": "passion for innovation",
+      "star": "Like a shooting star streaking across the night sky, innovation propelled us forward, constantly seeking to push boundaries and uncover new possibilities",
+      "partner": "But innovation, although powerful, needed a partner to fully realize its potential",
+      "creativity": "Enter creativity, the spark that ignites the imagination and",
+      "creativityHighlight": "brings innovation to life",
+      "comet": "Like a blazing comet, creativity soared through the universe, infusing every project with a touch of brilliance and originality",
+      "yearned": "But it too yearned for a partner, an equal force to combine talents and achieve greatness",
+      "happened": "And so,",
+      "happenedHighlight": "it happened",
+      "collision": "Innovation and creativity collided, creating a magnificent explosion that formed Intersson, a planet unlike any other",
+      "celestial": "Like a celestial body, our company possesses the combined power of both forces, a harmonious blend that fuels our every endeavor",
+      "today": "Today",
+      "testament": "Intersson stands as a testament to the belief that when innovation meets creativity, extraordinary things happen",
+      "expert": "Our expert team infuses unmatched flair into our works, emphasizing the enduring commitment to excellence.",
+      "future": "Where innovation and creativity collide to shape a brighter future.",
+      "welcome": "Welcome to the",
+      "worldOf": "world of",
+      "joinUs": "So,",
+      "joinUsHighlight": "join us",
+      "joinUsEnd": "on this journey to reach new horizons and unlock the full potential of your company"
     },
-    "Potential": {
-      "title": "Our mission is to help technology companies maximize the potential of their ideas by providing cutting-edge solutions.",
-      "desc": "We value transparency, precise planning, and open communication. We use flexible development methods, adapting to the client's desires and budget. We always provide detailed explanations of each development stage, the technology stacks used, and the appropriate tools so that founders and stakeholders can make informed decisions.",
-      "developers": "Developers\nin the team",
-      "projects": "Completed\nprojects",
-      "years": "Years in the\ndevelopment market"
-    },
-    "Media": {
-      "title": "We in the media",
-      "mock_title1": "What is a quick start?",
-      "mock_desc1": "We provide a preliminary estimate within 24 hours.\nWe start in 2 days.",
-      "mock_title2": "Ramonsky rabbit",
-      "mock_desc2": "We optimized the operation of a rabbit farm using\na large ERP information system based on the\nMikhailov system."
+    "Cards": {
+      "strategy": "With a strategic approach",
+      "create": "We craft customized solutions",
+      "clients": "That cater to our clients' unique needs"
     }
   },
   "Work": {
@@ -347,10 +361,10 @@
     "Projects": {
       "title": "Key projects",
       "desc": "Projects",
-      "more": "More projects",
-      "everypetDesc": "Developed the server part for a social network of pet owners. Implemented user data management, integration with external services and security.",
+      "more": "Reviews",
+      "everypetDesc": "We engineered a next-generation real estate platform with intelligent features.",
       "merlinesDesc": "We created the Merlines service for searching available train, car, and airline tickets. We designed and implemented an architecture with a unique meta-search system.",
-      "petDesc": "We developed the server-side for a social network for pet owners. We implemented user data management, integration with external services, and ensured security.",
+      "petDesc": "We engineered a next-generation real estate platform with intelligent features.",
       "Merlines": {
         "title": "Merlines",
         "subTitle": "Development of a Meta-Search system",
@@ -819,7 +833,7 @@
     "Projects": {
       "title": "Key Projects",
       "desc": "Projects",
-      "more": "More Projects",
+      "more": "Reviews",
       "egeDesc": "A cross-platform mobile app designed to accelerate memorization of materials needed for successful exam preparation.",
       "simplDesc": "Developed a mobile app for collaborative planning."
     }
