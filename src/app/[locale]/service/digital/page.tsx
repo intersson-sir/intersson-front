@@ -12,9 +12,9 @@ type PageProps = {
   }
 }
 
-const DigitalPage = ({ params }: PageProps) => {
+const DigitalPage = ({ params: _params }: PageProps) => {
   const t = useTranslations('ServiceDigital.Methods')
-  const tP = useTranslations('ServiceDigital.Prices')
+  // const tP = useTranslations('ServiceDigital.Prices')
   const tT = useTranslations('ServiceDigital.Tasks')
 
   const METHODS_DATA = [
@@ -36,43 +36,43 @@ const DigitalPage = ({ params }: PageProps) => {
     }
   ]
 
-  const PRICES_DATA = [
-    {
-      title: tP('Auto.title'),
-      params: [
-        tP('Auto.param1'),
-        tP('Auto.param2'),
-        tP('Auto.param3'),
-        tP('Auto.param4'),
-        tP('Auto.param5')
-      ],
-      price: 700_000,
-      price_usd: 7000
-    },
-    {
-      title: tP('CRM.title'),
-      params: [
-        tP('CRM.param1'),
-        tP('CRM.param2'),
-        tP('CRM.param3'),
-        tP('CRM.param4'),
-        tP('CRM.param5')
-      ],
-      price: 2_500_000,
-      price_usd: 25_000
-    },
-    {
-      title: tP('Digital.title'),
-      params: [
-        tP('Digital.param1'),
-        tP('Digital.param2'),
-        tP('Digital.param3'),
-        tP('Digital.param4')
-      ],
-      price: 10_000_000,
-      price_usd: 100_000
-    }
-  ]
+  // const PRICES_DATA = [
+  //   {
+  //     title: tP('Auto.title'),
+  //     params: [
+  //       tP('Auto.param1'),
+  //       tP('Auto.param2'),
+  //       tP('Auto.param3'),
+  //       tP('Auto.param4'),
+  //       tP('Auto.param5')
+  //     ],
+  //     price: 700_000,
+  //     price_usd: 7000
+  //   },
+  //   {
+  //     title: tP('CRM.title'),
+  //     params: [
+  //       tP('CRM.param1'),
+  //       tP('CRM.param2'),
+  //       tP('CRM.param3'),
+  //       tP('CRM.param4'),
+  //       tP('CRM.param5')
+  //     ],
+  //     price: 2_500_000,
+  //     price_usd: 25_000
+  //   },
+  //   {
+  //     title: tP('Digital.title'),
+  //     params: [
+  //       tP('Digital.param1'),
+  //       tP('Digital.param2'),
+  //       tP('Digital.param3'),
+  //       tP('Digital.param4')
+  //     ],
+  //     price: 10_000_000,
+  //     price_usd: 100_000
+  //   }
+  // ]
 
   const TASKS_DATA = [
     {

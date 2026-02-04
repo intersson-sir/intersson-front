@@ -1,7 +1,8 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
 import './Iridescence.css'
+
+import { useEffect, useRef } from 'react'
 
 const vertexShader = `
 attribute vec2 uv;
@@ -57,7 +58,7 @@ interface IridescenceProps {
 
 export default function Iridescence({
   color = [1, 1, 1],
-  speed = 1.0,
+  speed = 1,
   amplitude = 0.1,
   mouseReact = true,
   style,
@@ -72,21 +73,33 @@ export default function Iridescence({
   const animationIdRef = useRef<number | null>(null)
 
   useEffect(() => {
-    if (!ctnDom.current) return
+    if (!ctnDom.current) {
+      return
+    }
 
     const ctn = ctnDom.current
     const canvas = document.createElement('canvas')
     canvasRef.current = canvas
-    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
-    if (!gl) return
-    glRef.current = gl as WebGLRenderingContext
+    const glContext =
+      canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
+    if (!glContext) {
+      return
+    }
+    const gl = glContext as WebGLRenderingContext
+    glRef.current = gl
 
     gl.clearColor(1, 1, 1, 1)
 
     // Compile shader
-    function createShader(gl: WebGLRenderingContext, type: number, source: string) {
+    function createShader(
+      gl: WebGLRenderingContext,
+      type: number,
+      source: string
+    ) {
       const shader = gl.createShader(type)
-      if (!shader) return null
+      if (!shader) {
+        return null
+      }
       gl.shaderSource(shader, source)
       gl.compileShader(shader)
       if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
@@ -100,10 +113,14 @@ export default function Iridescence({
     // Create program
     const vShader = createShader(gl, gl.VERTEX_SHADER, vertexShader)
     const fShader = createShader(gl, gl.FRAGMENT_SHADER, fragmentShader)
-    if (!vShader || !fShader) return
+    if (!vShader || !fShader) {
+      return
+    }
 
     const program = gl.createProgram()
-    if (!program) return
+    if (!program) {
+      return
+    }
     programRef.current = program
 
     gl.attachShader(program, vShader)
@@ -152,21 +169,30 @@ export default function Iridescence({
     gl.uniform1f(uSpeedLoc, speed)
 
     function resize() {
-      if (!canvas || !gl || !programRef.current) return
+      if (!canvas || !gl || !programRef.current) {
+        return
+      }
       const scale = 1
       canvas.width = ctn.offsetWidth * scale
       canvas.height = ctn.offsetHeight * scale
       canvas.style.width = `${ctn.offsetWidth}px`
       canvas.style.height = `${ctn.offsetHeight}px`
       gl.viewport(0, 0, canvas.width, canvas.height)
-      gl.uniform3f(uResolutionLoc, canvas.width, canvas.height, canvas.width / canvas.height)
+      gl.uniform3f(
+        uResolutionLoc,
+        canvas.width,
+        canvas.height,
+        canvas.width / canvas.height
+      )
     }
 
     window.addEventListener('resize', resize)
     resize()
 
     function update(t: number) {
-      if (!gl || !programRef.current) return
+      if (!gl || !programRef.current) {
+        return
+      }
       animationIdRef.current = requestAnimationFrame(update)
       gl.uniform1f(uTimeLoc, t * 0.001)
       gl.clear(gl.COLOR_BUFFER_BIT)
@@ -174,13 +200,15 @@ export default function Iridescence({
     }
 
     animationIdRef.current = requestAnimationFrame(update)
-    ctn.appendChild(canvas)
+    ctn.append(canvas)
 
     function handleMouseMove(e: MouseEvent) {
-      if (!gl || !programRef.current) return
+      if (!gl || !programRef.current) {
+        return
+      }
       const rect = ctn.getBoundingClientRect()
       const x = (e.clientX - rect.left) / rect.width
-      const y = 1.0 - (e.clientY - rect.top) / rect.height
+      const y = 1 - (e.clientY - rect.top) / rect.height
       mousePos.current = { x, y }
       gl.uniform2f(uMouseLoc, x, y)
     }
@@ -198,7 +226,7 @@ export default function Iridescence({
         ctn.removeEventListener('mousemove', handleMouseMove)
       }
       if (canvas && canvas.parentNode) {
-        ctn.removeChild(canvas)
+        canvas.remove()
       }
       const loseContext = gl.getExtension('WEBGL_lose_context')
       if (loseContext) {
@@ -207,5 +235,12 @@ export default function Iridescence({
     }
   }, [color, speed, amplitude, mouseReact])
 
-  return <div ref={ctnDom} className={`iridescence-container ${className}`} style={style} {...rest} />
+  return (
+    <div
+      ref={ctnDom}
+      className={`iridescence-container ${className}`}
+      style={style}
+      {...rest}
+    />
+  )
 }

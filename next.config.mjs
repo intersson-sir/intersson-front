@@ -13,6 +13,16 @@ const nextConfig = {
         hostname: 'images.unsplash.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'intersson.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'intersson.com',
+        pathname: '/**',
+      },
     ],
   },
 

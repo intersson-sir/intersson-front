@@ -8,7 +8,7 @@ const API = {
   },
   REVIEWS: {
     GET_REVIEWS: '/reviews/reviews/', // GET
-    SEND_REVIEW: '/reviews/reviews/'  // POST
+    SEND_REVIEW: '/reviews/reviews/' // POST
   }
 }
 

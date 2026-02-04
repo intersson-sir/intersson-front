@@ -11,9 +11,9 @@ type PageProps = {
   }
 }
 
-const AIPage = ({ params }: PageProps) => {
+const AIPage = ({ params: _params }: PageProps) => {
   const t = useTranslations('ServiceAI.Methods')
-  const tP = useTranslations('ServiceAI.Prices')
+  // const tP = useTranslations('ServiceAI.Prices')
   const tT = useTranslations('ServiceAI.Tasks')
 
   const METHODS_DATA = [
@@ -31,37 +31,37 @@ const AIPage = ({ params }: PageProps) => {
     }
   ]
 
-  const PRICES_DATA = [
-    {
-      title: tP('Integration.title'),
-      params: [
-        tP('Integration.param1'),
-        tP('Integration.param2'),
-        tP('Integration.param3'),
-        tP('Integration.param4'),
-        tP('Integration.param5')
-      ],
-      price: 500_000,
-      price_usd: 5000
-    },
-    {
-      title: tP('AI.title'),
-      params: [
-        tP('AI.param1'),
-        tP('AI.param2'),
-        tP('AI.param3'),
-        tP('AI.param4')
-      ],
-      price: 3_000_000,
-      price_usd: 30_000
-    },
-    {
-      title: tP('DEV.title'),
-      params: [tP('DEV.param1'), tP('DEV.param2'), tP('DEV.param3')],
-      price: 5_000_000,
-      price_usd: 50_000
-    }
-  ]
+  // const PRICES_DATA = [
+  //   {
+  //     title: tP('Integration.title'),
+  //     params: [
+  //       tP('Integration.param1'),
+  //       tP('Integration.param2'),
+  //       tP('Integration.param3'),
+  //       tP('Integration.param4'),
+  //       tP('Integration.param5')
+  //     ],
+  //     price: 500_000,
+  //     price_usd: 5000
+  //   },
+  //   {
+  //     title: tP('AI.title'),
+  //     params: [
+  //       tP('AI.param1'),
+  //       tP('AI.param2'),
+  //       tP('AI.param3'),
+  //       tP('AI.param4')
+  //     ],
+  //     price: 3_000_000,
+  //     price_usd: 30_000
+  //   },
+  //   {
+  //     title: tP('DEV.title'),
+  //     params: [tP('DEV.param1'), tP('DEV.param2'), tP('DEV.param3')],
+  //     price: 5_000_000,
+  //     price_usd: 50_000
+  //   }
+  // ]
 
   const TASKS_DATA = [
     {

@@ -11,9 +11,9 @@ type PageProps = {
   }
 }
 
-const WebPage = ({ params }: PageProps) => {
+const WebPage = ({ params: _params }: PageProps) => {
   const t = useTranslations('ServiceWeb.Methods')
-  const tP = useTranslations('ServiceWeb.Prices')
+  // const tP = useTranslations('ServiceWeb.Prices')
   const tT = useTranslations('ServiceWeb.Tasks')
 
   const METHODS_DATA = [
@@ -35,43 +35,43 @@ const WebPage = ({ params }: PageProps) => {
     }
   ]
 
-  const PRICES_DATA = [
-    {
-      title: tP('MVP.title'),
-      params: [
-        tP('MVP.param1'),
-        tP('MVP.param2'),
-        tP('MVP.param3'),
-        tP('MVP.param4'),
-        tP('MVP.param5')
-      ],
-      price: 300_000,
-      price_usd: 3000
-    },
-    {
-      title: tP('Business.title'),
-      params: [
-        tP('Business.param1'),
-        tP('Business.param2'),
-        tP('Business.param3'),
-        tP('Business.param4')
-      ],
-      price: 1_500_000,
-      price_usd: 15_000
-    },
-    {
-      title: tP('Commerc.title'),
-      params: [
-        tP('Commerc.param1'),
-        tP('Commerc.param2'),
-        tP('Commerc.param3'),
-        tP('Commerc.param4'),
-        tP('Commerc.param5')
-      ],
-      price: 5_000_000,
-      price_usd: 50_000
-    }
-  ]
+  // const PRICES_DATA = [
+  //   {
+  //     title: tP('MVP.title'),
+  //     params: [
+  //       tP('MVP.param1'),
+  //       tP('MVP.param2'),
+  //       tP('MVP.param3'),
+  //       tP('MVP.param4'),
+  //       tP('MVP.param5')
+  //     ],
+  //     price: 300_000,
+  //     price_usd: 3000
+  //   },
+  //   {
+  //     title: tP('Business.title'),
+  //     params: [
+  //       tP('Business.param1'),
+  //       tP('Business.param2'),
+  //       tP('Business.param3'),
+  //       tP('Business.param4')
+  //     ],
+  //     price: 1_500_000,
+  //     price_usd: 15_000
+  //   },
+  //   {
+  //     title: tP('Commerc.title'),
+  //     params: [
+  //       tP('Commerc.param1'),
+  //       tP('Commerc.param2'),
+  //       tP('Commerc.param3'),
+  //       tP('Commerc.param4'),
+  //       tP('Commerc.param5')
+  //     ],
+  //     price: 5_000_000,
+  //     price_usd: 50_000
+  //   }
+  // ]
 
   const TASKS_DATA = [
     {

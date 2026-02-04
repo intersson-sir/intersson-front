@@ -13,7 +13,8 @@ import S from './Footer.module.scss'
 const Footer = ({ forceShow = false }: { forceShow?: boolean }) => {
   const t = useTranslations('Footer')
   const isSubscriptionPage = usePathname().includes('subscription')
-  const isFormPage = usePathname().includes('form') || (isSubscriptionPage && !forceShow)
+  const isFormPage =
+    usePathname().includes('form') || (isSubscriptionPage && !forceShow)
 
   const goToSendMail = () => {
     window.open(URLS.MAIL, '_blank')

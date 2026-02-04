@@ -23,7 +23,13 @@ type ReviewFormDto = {
   file: null | File
 }
 
-const FORM_INIT = { name: '', company: '', position: '', review: '', file: null }
+const FORM_INIT = {
+  name: '',
+  company: '',
+  position: '',
+  review: '',
+  file: null
+}
 
 const ReviewForm = () => {
   const t = useTranslations('ReviewForm')
@@ -57,13 +63,19 @@ const ReviewForm = () => {
   const onSubmit = async (form: ReviewFormDto) => {
     const formData = new FormData()
     const { name, company, position, review, file } = form
+
+    const parts = name.trim().split(/\s+/)
+    const firstName = parts[0] || ''
+    const lastName = parts.slice(1).join(' ') || ''
+
     if (file) {
-      formData.append('logo', file)
+      formData.append('company_logo', file)
     }
-    formData.append('name', name)
-    formData.append('company', company)
+    formData.append('first_name', firstName)
+    formData.append('last_name', lastName)
+    formData.append('company_name', company)
     formData.append('position', position)
-    formData.append('review', review)
+    formData.append('review_text', review)
 
     try {
       await createReview(formData)
@@ -134,7 +146,11 @@ const ReviewForm = () => {
           errorMessage={errors.review?.message}
         />
         <div className={S.actions}>
-          <Upload onChange={v => setValue('file', v)} value={watch('file')} title={t('logo')} />
+          <Upload
+            onChange={v => setValue('file', v)}
+            value={watch('file')}
+            title={t('logo')}
+          />
         </div>
         <Button
           onClick={() => setIsChangeOnBtn(true)}

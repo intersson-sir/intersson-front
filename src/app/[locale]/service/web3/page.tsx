@@ -11,9 +11,9 @@ type PageProps = {
   }
 }
 
-const Web3Page = ({ params }: PageProps) => {
+const Web3Page = ({ params: _params }: PageProps) => {
   const t = useTranslations('ServiceWeb3.Methods')
-  const tP = useTranslations('ServiceWeb3.Prices')
+  // const tP = useTranslations('ServiceWeb3.Prices')
   const tT = useTranslations('ServiceWeb3.Tasks')
 
   const METHODS_DATA = [
@@ -35,42 +35,42 @@ const Web3Page = ({ params }: PageProps) => {
     }
   ]
 
-  const PRICES_DATA = [
-    {
-      title: tP('Token.title'),
-      params: [
-        tP('Token.param1'),
-        tP('Token.param2'),
-        tP('Token.param3'),
-        tP('Token.param4'),
-        tP('Token.param5')
-      ],
-      price: 1_000_000,
-      price_usd: 10_000
-    },
-    {
-      title: tP('DEX.title'),
-      params: [
-        tP('DEX.param1'),
-        tP('DEX.param2'),
-        tP('DEX.param3'),
-        tP('DEX.param4')
-      ],
-      price: 5_000_000,
-      price_usd: 50_000
-    },
-    {
-      title: tP('Chain.title'),
-      params: [
-        tP('Chain.param1'),
-        tP('Chain.param2'),
-        tP('Chain.param3'),
-        tP('Chain.param4')
-      ],
-      price: 10_000_000,
-      price_usd: 100_000
-    }
-  ]
+  // const PRICES_DATA = [
+  //   {
+  //     title: tP('Token.title'),
+  //     params: [
+  //       tP('Token.param1'),
+  //       tP('Token.param2'),
+  //       tP('Token.param3'),
+  //       tP('Token.param4'),
+  //       tP('Token.param5')
+  //     ],
+  //     price: 1_000_000,
+  //     price_usd: 10_000
+  //   },
+  //   {
+  //     title: tP('DEX.title'),
+  //     params: [
+  //       tP('DEX.param1'),
+  //       tP('DEX.param2'),
+  //       tP('DEX.param3'),
+  //       tP('DEX.param4')
+  //     ],
+  //     price: 5_000_000,
+  //     price_usd: 50_000
+  //   },
+  //   {
+  //     title: tP('Chain.title'),
+  //     params: [
+  //       tP('Chain.param1'),
+  //       tP('Chain.param2'),
+  //       tP('Chain.param3'),
+  //       tP('Chain.param4')
+  //     ],
+  //     price: 10_000_000,
+  //     price_usd: 100_000
+  //   }
+  // ]
 
   const TASKS_DATA = [
     {

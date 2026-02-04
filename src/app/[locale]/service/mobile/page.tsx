@@ -11,9 +11,9 @@ type PageProps = {
   }
 }
 
-const MobilePage = ({ params }: PageProps) => {
+const MobilePage = ({ params: _params }: PageProps) => {
   const t = useTranslations('ServiceMobile.Methods')
-  const tP = useTranslations('ServiceMobile.Prices')
+  // const tP = useTranslations('ServiceMobile.Prices')
   const tT = useTranslations('ServiceMobile.Tasks')
 
   const METHODS_DATA = [
@@ -35,42 +35,42 @@ const MobilePage = ({ params }: PageProps) => {
     }
   ]
 
-  const PRICES_DATA = [
-    {
-      title: tP('MVP.title'),
-      params: [
-        tP('MVP.param1'),
-        tP('MVP.param2'),
-        tP('MVP.param3'),
-        tP('MVP.param4'),
-        tP('MVP.param5')
-      ],
-      price: 500_000,
-      price_usd: 5000
-    },
-    {
-      title: tP('DEV.title'),
-      params: [
-        tP('DEV.param1'),
-        tP('DEV.param2'),
-        tP('DEV.param3'),
-        tP('DEV.param4')
-      ],
-      price: 1_500_000,
-      price_usd: 15_000
-    },
-    {
-      title: tP('App.title'),
-      params: [
-        tP('App.param1'),
-        tP('App.param2'),
-        tP('App.param3'),
-        tP('App.param4')
-      ],
-      price: 5_000_000,
-      price_usd: 50_000
-    }
-  ]
+  // const PRICES_DATA = [
+  //   {
+  //     title: tP('MVP.title'),
+  //     params: [
+  //       tP('MVP.param1'),
+  //       tP('MVP.param2'),
+  //       tP('MVP.param3'),
+  //       tP('MVP.param4'),
+  //       tP('MVP.param5')
+  //     ],
+  //     price: 500_000,
+  //     price_usd: 5000
+  //   },
+  //   {
+  //     title: tP('DEV.title'),
+  //     params: [
+  //       tP('DEV.param1'),
+  //       tP('DEV.param2'),
+  //       tP('DEV.param3'),
+  //       tP('DEV.param4')
+  //     ],
+  //     price: 1_500_000,
+  //     price_usd: 15_000
+  //   },
+  //   {
+  //     title: tP('App.title'),
+  //     params: [
+  //       tP('App.param1'),
+  //       tP('App.param2'),
+  //       tP('App.param3'),
+  //       tP('App.param4')
+  //     ],
+  //     price: 5_000_000,
+  //     price_usd: 50_000
+  //   }
+  // ]
 
   const TASKS_DATA = [
     {

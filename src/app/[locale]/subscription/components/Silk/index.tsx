@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unknown-property */
 'use client'
 
-import React, { forwardRef, useMemo, useRef, useLayoutEffect } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import React, { forwardRef, useMemo, useRef } from 'react'
 import * as THREE from 'three'
 
 const vertexShader = `
@@ -46,11 +46,11 @@ void main() {
 }
 `
 
-const SilkPlane = forwardRef((props: any, ref: any) => {
+const SilkPlane = forwardRef((props: any, _ref: any) => {
   const { viewport } = useThree()
   const materialRef = useRef<THREE.ShaderMaterial>(null)
 
-  useFrame((state) => {
+  useFrame(state => {
     if (materialRef.current) {
       materialRef.current.uniforms.uTime.value = state.clock.getElapsedTime()
     }
@@ -70,7 +70,12 @@ const SilkPlane = forwardRef((props: any, ref: any) => {
 })
 SilkPlane.displayName = 'SilkPlane'
 
-export default function Silk({ speed = 5, scale = 1, color = '#7B7481', noiseIntensity = 1.5 }) {
+export default function Silk({
+  speed = 5,
+  scale = 1,
+  color = '#7B7481',
+  noiseIntensity = 1.5
+}) {
   const uniforms = useMemo(
     () => ({
       uTime: { value: 0 },
@@ -83,7 +88,15 @@ export default function Silk({ speed = 5, scale = 1, color = '#7B7481', noiseInt
   )
 
   return (
-    <div style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}>
+    <div
+      style={{
+        width: '100%',
+        height: '100%',
+        position: 'absolute',
+        top: 0,
+        left: 0
+      }}
+    >
       <Canvas dpr={[1, 2]}>
         <SilkPlane uniforms={uniforms} />
       </Canvas>

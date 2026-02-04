@@ -1,8 +1,9 @@
 'use client'
 
+import './LiquidEther.css'
+
 import React, { useEffect, useRef } from 'react'
 import * as THREE from 'three'
-import './LiquidEther.css'
 
 export interface LiquidEtherProps {
   mouseForce?: number
@@ -42,7 +43,9 @@ export default function LiquidEther({
   const cameraRef = useRef<THREE.Camera | null>(null)
 
   useEffect(() => {
-    if (!mountRef.current) return
+    if (!mountRef.current) {
+      return
+    }
 
     // Create scene
     const scene = new THREE.Scene()
@@ -54,9 +57,12 @@ export default function LiquidEther({
 
     // Create renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
-    renderer.setClearColor(new THREE.Color(0x000000), 0)
-    renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight)
-    mountRef.current.appendChild(renderer.domElement)
+    renderer.setClearColor(new THREE.Color(0x00_00_00), 0)
+    renderer.setSize(
+      mountRef.current.clientWidth,
+      mountRef.current.clientHeight
+    )
+    mountRef.current.append(renderer.domElement)
     rendererRef.current = renderer
 
     // Create gradient geometry
@@ -111,8 +117,13 @@ export default function LiquidEther({
 
     // Handle resize
     const handleResize = () => {
-      if (!mountRef.current || !renderer) return
-      renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight)
+      if (!mountRef.current || !renderer) {
+        return
+      }
+      renderer.setSize(
+        mountRef.current.clientWidth,
+        mountRef.current.clientHeight
+      )
     }
 
     window.addEventListener('resize', handleResize)
@@ -124,10 +135,16 @@ export default function LiquidEther({
       geometry.dispose()
       material.dispose()
       if (mountRef.current && renderer.domElement.parentNode) {
-        mountRef.current.removeChild(renderer.domElement)
+        renderer.domElement.remove()
       }
     }
   }, [colors])
 
-  return <div ref={mountRef} className={`liquid-ether-container ${className || ''}`} style={style} />
+  return (
+    <div
+      ref={mountRef}
+      className={`liquid-ether-container ${className || ''}`}
+      style={style}
+    />
+  )
 }

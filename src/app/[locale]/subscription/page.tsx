@@ -1,9 +1,9 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
-import { useTheme } from 'next-themes'
 import dynamic from 'next/dynamic'
-import { Link } from '@/navigation'
+import NextLink from 'next/link'
+import { useLocale, useTranslations } from 'next-intl'
+import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 
 import { getIndustries } from '@/api/services/subscriptions'
@@ -36,6 +36,7 @@ const HeroBadge = dynamic(() => import('./components/HeroBadge'), {
 
 const SubscriptionPage = () => {
   const t = useTranslations('Subscription')
+  const locale = useLocale()
   const { theme, resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
@@ -51,9 +52,10 @@ const SubscriptionPage = () => {
     const fetchIndustries = async () => {
       try {
         const res = await getIndustries()
+        console.log('Industries response:', res.data)
         setIndustries(res.data)
-      } catch (e) {
-        console.error(e)
+      } catch (error) {
+        console.error('Industries error:', error)
       }
     }
 
@@ -93,9 +95,14 @@ const SubscriptionPage = () => {
       {mounted && (
         <div className={S.iridescenceBackground}>
           {isDarkTheme ? (
-            <Silk speed={2.0} scale={1.2} color="#2e1065" noiseIntensity={1.2} rotation={0} />
+            <Silk speed={2} scale={1.2} color="#2e1065" noiseIntensity={1.2} />
           ) : (
-            <Iridescence color={[1, 1, 1]} speed={1.0} amplitude={0.1} mouseReact />
+            <Iridescence
+              color={[1, 1, 1]}
+              speed={1}
+              amplitude={0.1}
+              mouseReact
+            />
           )}
         </div>
       )}
@@ -130,13 +137,13 @@ const SubscriptionPage = () => {
           <h2 className={S.sectionTitle}>{t('industriesTitle')}</h2>
           <div className={S.industriesGrid}>
             {industries.map((industry, index) => (
-              <Link
-                href={`/subscription/${industry.id}`}
+              <NextLink
+                href={`/${locale}/subscription/${industry.id}`}
                 key={index}
                 className={S.industryCard}
               >
                 <span className={S.industryName}>{industry.name}</span>
-              </Link>
+              </NextLink>
             ))}
           </div>
         </div>

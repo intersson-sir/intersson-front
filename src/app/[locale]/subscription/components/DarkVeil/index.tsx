@@ -1,8 +1,9 @@
 'use client'
 
-import { useRef, useEffect } from 'react'
-import { Renderer, Program, Mesh, Triangle } from 'ogl'
 import './DarkVeil.css'
+
+import { Mesh, Program, Renderer, Triangle } from 'ogl'
+import { useEffect, useRef } from 'react'
 
 const vertex = `
 attribute vec2 position;
@@ -25,12 +26,16 @@ void main(){
 
 export default function DarkVeil() {
   const ref = useRef<HTMLCanvasElement>(null)
-  
+
   useEffect(() => {
-    if (!ref.current) return
+    if (!ref.current) {
+      return
+    }
     const canvas = ref.current
     const parent = canvas.parentElement
-    if (!parent) return
+    if (!parent) {
+      return
+    }
 
     try {
       const renderer = new Renderer({
@@ -55,7 +60,9 @@ export default function DarkVeil() {
       const resize = () => {
         const w = parent.clientWidth
         const h = parent.clientHeight
-        if (w === 0 || h === 0) return
+        if (w === 0 || h === 0) {
+          return
+        }
         renderer.setSize(w, h)
         program.uniforms.uResolution.value = [w, h]
       }
@@ -75,10 +82,12 @@ export default function DarkVeil() {
         cancelAnimationFrame(rafId)
         window.removeEventListener('resize', resize)
         const loseContext = gl.getExtension('WEBGL_lose_context')
-        if (loseContext) loseContext.loseContext()
+        if (loseContext) {
+          loseContext.loseContext()
+        }
       }
-    } catch (e) {
-      console.error('DarkVeil error:', e)
+    } catch (error) {
+      console.error('DarkVeil error:', error)
     }
   }, [])
 

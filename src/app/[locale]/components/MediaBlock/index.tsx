@@ -1,7 +1,8 @@
-import { useTranslations } from 'next-intl'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 import URLS from '@/configs/urls'
+
 import S from './MediaBlock.module.scss'
 
 interface MediaBlockProps {
@@ -18,7 +19,7 @@ const MediaBlock = ({ title }: MediaBlockProps) => {
         <div className={S.badge}>{t('soon')}</div>
         <p className={S.subtitle}>{t('subtitle')}</p>
       </div>
-      
+
       <div className={S.cards}>
         {/* Starter Plan */}
         <div className={S.card}>
@@ -30,15 +31,31 @@ const MediaBlock = ({ title }: MediaBlockProps) => {
           </div>
           <div className={S.buyout}>{t('starter.buyout')}</div>
           <ul className={S.features}>
-            <li><span className={S.checkmark}>✓</span> {t('starter.feature1')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('starter.feature2')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('starter.feature3')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('starter.feature4')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('starter.feature5')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('starter.feature6')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('starter.feature7')}</li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('starter.feature1')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('starter.feature2')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('starter.feature3')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('starter.feature4')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('starter.feature5')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('starter.feature6')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('starter.feature7')}
+            </li>
           </ul>
-          <Link href={URLS.WORK} className={S.button}>{t('getStarted')}</Link>
+          <Link href={URLS.WORK} className={S.button}>
+            {t('getStarted')}
+          </Link>
         </div>
 
         {/* Professional Plan */}
@@ -52,17 +69,46 @@ const MediaBlock = ({ title }: MediaBlockProps) => {
           </div>
           <div className={S.buyout}>{t('professional.buyout')}</div>
           <ul className={S.features}>
-            <li><span className={S.checkmark}>✓</span> {t('professional.feature1')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('professional.feature2')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('professional.feature3')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('professional.feature4')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('professional.feature5')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('professional.feature6')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('professional.feature7')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('professional.feature8')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('professional.feature9')}</li>
+            <li>
+              <span className={S.checkmark}>✓</span>{' '}
+              {t('professional.feature1')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span>{' '}
+              {t('professional.feature2')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span>{' '}
+              {t('professional.feature3')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span>{' '}
+              {t('professional.feature4')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span>{' '}
+              {t('professional.feature5')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span>{' '}
+              {t('professional.feature6')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span>{' '}
+              {t('professional.feature7')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span>{' '}
+              {t('professional.feature8')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span>{' '}
+              {t('professional.feature9')}
+            </li>
           </ul>
-          <Link href={URLS.WORK} className={`${S.button} ${S.buttonPrimary}`}>{t('getStarted')}</Link>
+          <Link href={URLS.WORK} className={`${S.button} ${S.buttonPrimary}`}>
+            {t('getStarted')}
+          </Link>
         </div>
 
         {/* Enterprise Plan */}
@@ -75,19 +121,43 @@ const MediaBlock = ({ title }: MediaBlockProps) => {
           </div>
           <div className={S.buyout}>{t('enterprise.buyout')}</div>
           <ul className={S.features}>
-            <li><span className={S.checkmark}>✓</span> {t('enterprise.feature1')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('enterprise.feature2')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('enterprise.feature3')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('enterprise.feature4')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('enterprise.feature5')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('enterprise.feature6')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('enterprise.feature7')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('enterprise.feature8')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('enterprise.feature9')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('enterprise.feature10')}</li>
-            <li><span className={S.checkmark}>✓</span> {t('enterprise.feature11')}</li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('enterprise.feature1')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('enterprise.feature2')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('enterprise.feature3')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('enterprise.feature4')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('enterprise.feature5')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('enterprise.feature6')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('enterprise.feature7')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('enterprise.feature8')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('enterprise.feature9')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('enterprise.feature10')}
+            </li>
+            <li>
+              <span className={S.checkmark}>✓</span> {t('enterprise.feature11')}
+            </li>
           </ul>
-          <Link href={URLS.WORK} className={S.button}>{t('getStarted')}</Link>
+          <Link href={URLS.WORK} className={S.button}>
+            {t('getStarted')}
+          </Link>
         </div>
       </div>
     </div>

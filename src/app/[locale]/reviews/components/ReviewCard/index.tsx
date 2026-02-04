@@ -10,7 +10,13 @@ interface ReviewCardProps {
   review: string
 }
 
-const ReviewCard = ({ name, position, company, logo, review }: ReviewCardProps) => {
+const ReviewCard = ({
+  name,
+  position,
+  company,
+  logo,
+  review
+}: ReviewCardProps) => {
   return (
     <div className={S.card}>
       <div className={S.header}>

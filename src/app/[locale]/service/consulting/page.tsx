@@ -12,9 +12,9 @@ type PageProps = {
   }
 }
 
-const ConsultingPage = ({ params }: PageProps) => {
+const ConsultingPage = ({ params: _params }: PageProps) => {
   const t = useTranslations('ServiceConsulting.Methods')
-  const tP = useTranslations('ServiceConsulting.Prices')
+  // const tP = useTranslations('ServiceConsulting.Prices')
   const tT = useTranslations('ServiceConsulting.Tasks')
 
   const METHODS_DATA = [
@@ -36,41 +36,41 @@ const ConsultingPage = ({ params }: PageProps) => {
     }
   ]
 
-  const PRICES_DATA = [
-    {
-      title: tP('Express.title'),
-      params: [
-        tP('Express.param1'),
-        tP('Express.param2'),
-        tP('Express.param3'),
-        tP('Express.param4')
-      ],
-      price: 400_000,
-      price_usd: 4000
-    },
-    {
-      title: tP('Test.title'),
-      params: [
-        tP('Test.param1'),
-        tP('Test.param2'),
-        tP('Test.param3'),
-        tP('Test.param4')
-      ],
-      price: 1_000_000,
-      price_usd: 10_000
-    },
-    {
-      title: tP('Enterprice.title'),
-      params: [
-        tP('Enterprice.param1'),
-        tP('Enterprice.param2'),
-        tP('Enterprice.param3'),
-        tP('Enterprice.param4')
-      ],
-      price: 4_000_000,
-      price_usd: 40_000
-    }
-  ]
+  // const PRICES_DATA = [
+  //   {
+  //     title: tP('Express.title'),
+  //     params: [
+  //       tP('Express.param1'),
+  //       tP('Express.param2'),
+  //       tP('Express.param3'),
+  //       tP('Express.param4')
+  //     ],
+  //     price: 400_000,
+  //     price_usd: 4000
+  //   },
+  //   {
+  //     title: tP('Test.title'),
+  //     params: [
+  //       tP('Test.param1'),
+  //       tP('Test.param2'),
+  //       tP('Test.param3'),
+  //       tP('Test.param4')
+  //     ],
+  //     price: 1_000_000,
+  //     price_usd: 10_000
+  //   },
+  //   {
+  //     title: tP('Enterprice.title'),
+  //     params: [
+  //       tP('Enterprice.param1'),
+  //       tP('Enterprice.param2'),
+  //       tP('Enterprice.param3'),
+  //       tP('Enterprice.param4')
+  //     ],
+  //     price: 4_000_000,
+  //     price_usd: 40_000
+  //   }
+  // ]
 
   const TASKS_DATA = [
     {

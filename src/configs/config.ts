@@ -7,11 +7,8 @@ export const locales: localeType[] = ['en', 'ru']
 export type LocaleType = typeof locales
 
 export const pathnames = {
-  '/': '/'
-  // '/pathnames': {
-  //   en: '/pathnames',
-  //   de: '/pfadnamen'
-  // }
+  '/': '/',
+  '/subscription': '/subscription'
 } satisfies Pathnames<typeof locales>
 
 // Use the default: `always`

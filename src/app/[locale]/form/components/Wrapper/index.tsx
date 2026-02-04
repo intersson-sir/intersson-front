@@ -60,12 +60,12 @@ const Wrapper = () => {
     const formData = new FormData()
     const { desc, email, file, name, phone } = form
     if (file) {
-      formData.append('file', file)
+      formData.append('attachment', file)
     }
-    formData.append('name', name)
-    formData.append('phone', phone)
+    formData.append('full_name', name)
+    formData.append('contact_method', phone)
     formData.append('email', email)
-    formData.append('desc', desc)
+    formData.append('project_description', desc)
 
     await createForm(formData)
 

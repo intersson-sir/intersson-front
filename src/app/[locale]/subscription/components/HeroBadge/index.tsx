@@ -1,5 +1,6 @@
-import S from './HeroBadge.module.scss'
 import SparkleIcon from 'public/icons/sparkle.svg'
+
+import S from './HeroBadge.module.scss'
 
 interface HeroBadgeProps {
   text: string

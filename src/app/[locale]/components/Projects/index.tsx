@@ -32,10 +32,10 @@ const Projects = () => {
               </div>
             </div>
             <div className={S.dropImg}>
-              <Image 
-                src={'/images/fazaicon.png'} 
-                fill 
-                alt="Faza Watches" 
+              <Image
+                src={'/images/fazaicon.png'}
+                fill
+                alt="Faza Watches"
                 style={{ borderRadius: '50%' }}
               />
             </div>

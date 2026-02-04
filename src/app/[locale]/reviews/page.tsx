@@ -19,9 +19,16 @@ const ReviewsPage = () => {
     const fetchReviews = async () => {
       try {
         const res = await getReviews()
-        setReviews(res.data)
-      } catch (e) {
-        console.error(e)
+        const mappedReviews = res.data.map((item: any) => ({
+          name: `${item.first_name} ${item.last_name}`.trim(),
+          position: item.position,
+          company: item.company_name,
+          review: item.review_text,
+          logo: item.company_logo
+        }))
+        setReviews(mappedReviews)
+      } catch (error) {
+        console.error(error)
       }
     }
 

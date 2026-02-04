@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl'
+
 import MarqueeProjects from '@/app/[locale]/components/MarqueeProjects'
 
 import S from './HeroSection.module.scss'
