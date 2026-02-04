@@ -6,7 +6,7 @@ import ErrorIcon from 'public/icons/error.svg'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 
-import { createForm } from '@/api/services/form'
+import { createReview } from '@/api/services/reviews'
 import URLS from '@/configs/urls'
 import Button from '@/ui/Button'
 import Input from '@/ui/Input'
@@ -58,21 +58,27 @@ const ReviewForm = () => {
     const formData = new FormData()
     const { name, company, position, review, file } = form
     if (file) {
-      formData.append('file', file)
+      formData.append('logo', file)
     }
     formData.append('name', name)
     formData.append('company', company)
     formData.append('position', position)
-    formData.append('desc', `Компания: ${company}, Должность: ${position}, Отзыв: ${review}`)
+    formData.append('review', review)
 
-    await createForm(formData)
+    try {
+      await createReview(formData)
 
-    setValue('name', '')
-    setValue('company', '')
-    setValue('position', '')
-    setValue('review', '')
-    setValue('file', null)
-    router.push(URLS.SUCCESS)
+      setValue('name', '')
+      setValue('company', '')
+      setValue('position', '')
+      setValue('review', '')
+      setValue('file', null)
+      router.push(URLS.SUCCESS)
+    } catch (error) {
+      console.error('Failed to submit review:', error)
+      // Здесь можно добавить отображение ошибки пользователю, например через стейт
+      alert('Ошибка при отправке отзыва. Проверьте соединение с сервером.')
+    }
   }
 
   return (

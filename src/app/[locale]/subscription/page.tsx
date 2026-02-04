@@ -6,6 +6,8 @@ import dynamic from 'next/dynamic'
 import { Link } from '@/navigation'
 import { useEffect, useState } from 'react'
 
+import { getIndustries } from '@/api/services/subscriptions'
+
 import S from './Subscription.module.scss'
 
 // Import pricing component from main page
@@ -43,6 +45,20 @@ const SubscriptionPage = () => {
   }, [])
 
   const isDarkTheme = mounted && (theme === 'dark' || resolvedTheme === 'dark')
+  const [industries, setIndustries] = useState<any[]>([])
+
+  useEffect(() => {
+    const fetchIndustries = async () => {
+      try {
+        const res = await getIndustries()
+        setIndustries(res.data)
+      } catch (e) {
+        console.error(e)
+      }
+    }
+
+    fetchIndustries()
+  }, [])
 
   const benefits = [
     {
@@ -69,19 +85,6 @@ const SubscriptionPage = () => {
       title: t('benefit6Title'),
       desc: t('benefit6Desc')
     }
-  ]
-
-  const industries = [
-    { name: 'E-commerce', slug: 'e-commerce' },
-    { name: 'Healthcare', slug: 'healthcare' },
-    { name: 'Real Estate', slug: 'real-estate' },
-    { name: 'Education', slug: 'education' },
-    { name: 'Finance', slug: 'finance' },
-    { name: 'Technology', slug: 'technology' },
-    { name: 'Hospitality', slug: 'hospitality' },
-    { name: 'Marketing', slug: 'marketing' },
-    { name: 'Legal Services', slug: 'legal-services' },
-    { name: 'Food & Beverage', slug: 'food-beverage' }
   ]
 
   return (
@@ -127,9 +130,9 @@ const SubscriptionPage = () => {
           <h2 className={S.sectionTitle}>{t('industriesTitle')}</h2>
           <div className={S.industriesGrid}>
             {industries.map((industry, index) => (
-              <Link 
-                href={`/subscription/${industry.slug}`} 
-                key={index} 
+              <Link
+                href={`/subscription/${industry.id}`}
+                key={index}
                 className={S.industryCard}
               >
                 <span className={S.industryName}>{industry.name}</span>

@@ -1,8 +1,9 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
+import { getReviews } from '@/api/services/reviews'
 import ModalSlide from '@/ui/ModalSlide'
 
 import ReviewCard from './components/ReviewCard'
@@ -12,51 +13,20 @@ import S from './Reviews.module.scss'
 const ReviewsPage = () => {
   const t = useTranslations('Reviews')
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [reviews, setReviews] = useState<any[]>([])
 
-  const reviews = [
-    {
-      name: 'John Anderson',
-      position: 'CEO',
-      company: 'TechCorp Inc.',
-      logo: '/images/peoples/1.png',
-      review: t('review1')
-    },
-    {
-      name: 'Maria Garcia',
-      position: 'CTO',
-      company: 'Digital Solutions',
-      logo: '/images/peoples/2.png',
-      review: t('review2')
-    },
-    {
-      name: 'David Chen',
-      position: 'Product Manager',
-      company: 'Innovation Labs',
-      logo: '/images/peoples/3.png',
-      review: t('review3')
-    },
-    {
-      name: 'Sarah Williams',
-      position: 'Head of Development',
-      company: 'Startup Ventures',
-      logo: '/images/peoples/4.png',
-      review: t('review4')
-    },
-    {
-      name: 'Michael Brown',
-      position: 'Founder',
-      company: 'E-commerce Plus',
-      logo: '/images/peoples/1.png',
-      review: t('review5')
-    },
-    {
-      name: 'Emma Wilson',
-      position: 'VP of Technology',
-      company: 'Global Systems',
-      logo: '/images/peoples/2.png',
-      review: t('review6')
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const res = await getReviews()
+        setReviews(res.data)
+      } catch (e) {
+        console.error(e)
+      }
     }
-  ]
+
+    fetchReviews()
+  }, [])
 
   const handleLeaveReview = () => {
     setIsModalOpen(true)
