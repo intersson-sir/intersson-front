@@ -21,7 +21,18 @@ const ReviewCard = ({
     <div className={S.card}>
       <div className={S.header}>
         <div className={S.logo}>
-          <Image src={logo} alt={company} width={60} height={60} />
+          {logo ? (
+            <Image src={logo} alt={company} width={60} height={60} />
+          ) : (
+            <div
+              style={{
+                width: 60,
+                height: 60,
+                background: '#eee',
+                borderRadius: '50%'
+              }}
+            />
+          )}
         </div>
         <div className={S.info}>
           <h3 className={S.name}>{name}</h3>
